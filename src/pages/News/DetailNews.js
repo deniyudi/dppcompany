@@ -8,6 +8,7 @@ export const DetailNews = () => {
   const { id } = useParams();
 
   useEffect(() => {
+      window.scrollTo(0, 0);
     const getNews = async () => {
       try {
         const response = await axios.get(`http://localhost:5000/upload/${id}`);

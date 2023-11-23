@@ -3,6 +3,7 @@ import axios from "axios";
 import { Carousel } from "flowbite-react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
 import { background12, } from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 const ProgramCSR = () => {
   const data = "Program CSR";
@@ -11,6 +12,7 @@ const ProgramCSR = () => {
     const [csr, setCsr] = useState([]);
 
     useEffect(() => {
+      window.scrollTo(0, 0);
       getCsr();
     }, []);
 
@@ -20,6 +22,8 @@ const ProgramCSR = () => {
       );
       setCsr(response.data.reverse());
     };
+
+    const navigate = useNavigate();
 
     return (
       <>
@@ -38,10 +42,13 @@ const ProgramCSR = () => {
                     className="object-cover h-full w-full"
                   />
                   <div className="w-full h-full absolute bg-imgGelap top-0 left-0"></div>
-                  <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center px-10">
-                    <h1 className="text-4xl sm:text-[40px] md:text-5xl lg:text-[44px] text-center font-medium text-[#fff]">
+                  <div className="absolute top-0 left-0 space-y-12 w-full h-full flex flex-col justify-center items-center px-10">
+                    <p className="text-2xl sm:text-[40px] md:text-5xl lg:text-[44px] text-center font-medium text-[#fff]">
                       {programcsr.judul}
-                    </h1>
+                    </p>
+                    <p className="text-xl underline text-center font-medium text-[#fff]" onClick={() => navigate(`/detail/${programcsr.id}`)}>
+                      {programcsr.judul}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -74,7 +81,7 @@ const ProgramCSR = () => {
       </div>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[1000px] mx-auto"
+        className="grid grid-cols-2  lg:grid-cols-4 lg:w-[1000px] mx-auto"
         data-aos="fade-in"
         data-aos-duration="2000"
       >

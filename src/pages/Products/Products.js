@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
 import { background15 } from "../../assets";
 
@@ -22,6 +22,10 @@ import {
 
 
 export const Products = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const productImages = [
     { img: manhauler, title: "Man Hauler" },
     { img: xprovessel, title: "Xpro Medium Vessel" },
@@ -138,7 +142,7 @@ export const Products = () => {
             <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
               Clients Support
             </h2>
-            <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-2 dark:text-gray-400 text-center">
+            <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2  dark:text-gray-400 text-center">
               <img
                 className="flex justify-center items-center mx-auto"
                 src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/1AFbQ0GKhNMlFwXGrpvOSjpWuW6v09eDoXZkjYqr.png"

@@ -12,10 +12,13 @@ export const News = () => {
 
   useEffect(() => {
     getNews();
+      window.scrollTo(0, 0);
   }, []);
 
-   const getNews = async () => {
-    const response = await axios.get("http://localhost:5000/upload?category=news");
+  const getNews = async () => {
+    const response = await axios.get(
+      "http://localhost:5000/upload?category=news"
+    );
     setNews(response.data.reverse());
   };
 
@@ -30,13 +33,17 @@ export const News = () => {
       <>
         {news.map((news) => {
           return (
-            <div class="w-full px-4 md:w-1/2 lg:w-1/3" key={news.id}>
-              <div class="mx-auto mb-10 max-w-[370px]">
-                <div class="mb-5 overflow-hidden rounded">
-                  <img src={news.url} alt="imag" class="w-full h-52" />
+            <div className="w-full space-x-10 md:w-1/2 lg:w-1/3" key={news.id}>
+              <div className="mx-auto mb-10 lg:max-w-[300px] xl:max-w-[370px]">
+                <div className="mb-5 overflow-hidden rounded">
+                  <img
+                    src={news.url}
+                    alt="berita img"
+                    className="w-full h-52"
+                  />
                 </div>
                 <div>
-                  <span class=" mb-3  text-gray-600 inline-block rounded py-1 text-center text-sm font-extralight">
+                  <span className="mb-3 text-gray-600 inline-block rounded py-1 text-center text-sm font-extralight">
                     {new Intl.DateTimeFormat("id-ID", {
                       day: "numeric",
                       month: "long",
@@ -46,17 +53,13 @@ export const News = () => {
                   <h3>
                     <a
                       href="/"
-                      class="text-dark  hover:text-primary mb-3 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-[22px]"
+                      className="text-dark hover:text-primary mb-3 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-[22px]"
                     >
                       {news.judul}
-                      {/* {toNormalCase(news.judul)} */}
                     </a>
                   </h3>
-                  <p class="text-body-color text-base mb-2 line-clamp-2">
+                  <p className="text-body-color text-base mb-2 line-clamp-2">
                     {news.desc}
-                  </p>
-                  <p class="text-body-color text-base mb-2 line-clamp-2">
-                    {news.category}
                   </p>
                   <Button
                     className="-ml-4"
@@ -79,7 +82,7 @@ export const News = () => {
     <main className="w-full h-full justify-center mb-10 ">
       <BackgroundOverlay content={data} gambar={gambarAtas[0].news} />
       {/* card news  */}
-      <div className="mx-auto p-3 lg:px-32 lg:gap-0 sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">
+      <div className="mx-auto p-3 xl:px-32 lg:gap-0 sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">
         {_renderNews()}
       </div>
     </main>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
 import { background10, logodpp } from "../../assets";
 import { Button } from "flowbite-react";
@@ -6,6 +6,10 @@ import "../../../node_modules/reactjs-popup/dist/index.css";
 import Popup from "reactjs-popup";
 
 const Career = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const data = "Karier";
 
   return (
@@ -13,8 +17,8 @@ const Career = () => {
       <BackgroundOverlay content={data} gambar={background10} />
       {/* {_renderCareer()} */}
 
-      <div className="w-full h-full lg:px-32 px-5 space-y-10 my-4">
-        <div className=" text-xl font-semibold lg:text-4xl lg:font-bold">
+      <div className="w-full h-full xl:px-32 px-5 space-y-10 my-4">
+        <div className=" text-xl font-semibold lg:text-3xl xl:text-4xl lg:font-bold">
           PT Dian Pandu Pratama adalah perusahaan yang bergerak di bidang
           pengelolaan sumber daya manusia, penyedia tenaga kerja (Labour Supply)
           di bidang Welder, Assembler, Painter, Operator serta tenaga

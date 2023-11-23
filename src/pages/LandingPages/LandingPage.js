@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "flowbite-react";
-import { HiOutlineArrowRight} from "react-icons/hi";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import Carousel from "react-grid-carousel";
 import CountUp from "react-countup";
 import axios from "axios";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   visimisi,
   weldercertification,
@@ -36,6 +36,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     getNews();
+      window.scrollTo(0, 0);
   }, []);
 
   const getNews = async () => {
@@ -73,7 +74,7 @@ const LandingPage = () => {
             PT Dian Pandu Pratama
           </p>
           <hr className="border-black my-7" />
-          <p className="lg:w-[60%] text-lg font-normal text-gray-700">
+          <p className="lg:w-[80%] xl:w-[60%] text-lg font-normal text-gray-700">
             PT Dian Pandu Pratama adalah perusahaan yang berdiri sejak tahun
             2012 dan berfokus pada Product Support Manufacturing dan Manpower
             Skilled Support on Job Site. Kami memiliki Manpower yang telah
@@ -98,7 +99,7 @@ const LandingPage = () => {
         >
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="lg:grid lg:grid-cols-2 justify-items-center">
-            <div className="text-left w-auto  ml-5 lg:ml-[20%] lg:pt-8">
+            <div className="text-left w-auto  ml-5 xl:ml-[20%] lg:pt-8">
               <p className="text-base font-normal uppercase mb-2 text-gray-500 tracking-[4px]">
                 Why us
               </p>
@@ -111,12 +112,16 @@ const LandingPage = () => {
                 diberikan bisa optimal dan maksimal.
               </p>
 
-              <Button color="failure" onClick={()=>navigate("/about")} className="">
+              <Button
+                color="failure"
+                onClick={() => navigate("/about")}
+                className=""
+              >
                 <p>Tentang Kami</p>
                 <HiOutlineArrowRight className="ml-2 h-5 w-5" />
               </Button>
 
-              <div className="mt-7">
+              <div className="mt-7 mb-10">
                 <p className="text-base font-normal uppercase mb-3 text-gray-500 tracking-[4px]">
                   Total Manpower
                 </p>
@@ -166,7 +171,7 @@ const LandingPage = () => {
         {/* VISI MISI  */}
         <div className="text-center bg-slate-50 py-10">
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
-          <div className="xl:grid grid lg:grid-cols-2 xl:grid-cols-2 justify-items-center lg:px-[10%]">
+          <div className="xl:grid grid lg:grid-cols-2 xl:grid-cols-2 justify-items-center lg:px-5 xl:px-[10%]">
             <div class="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
               <img
                 data-aos="fade-right"
@@ -292,11 +297,11 @@ const LandingPage = () => {
             Product Fabrication
           </p>
           <Carousel cols={5} rows={1} gap={20} autoplay={6000} loop>
-            {productImages.map((image, index) => (
-              <Carousel.Item key={index}>
+            {productImages.map((image) => (
+              <Carousel.Item key={image.id}>
                 <img
                   src={image}
-                  alt={`product-${index}`}
+                  alt={`product-${image.id}`}
                   className="w-full h-full aspect-square bg-cover hover:scale-105 transition-transform duration-300 transform"
                 />
               </Carousel.Item>
@@ -384,7 +389,7 @@ const LandingPage = () => {
 
         {/* NEWS HIGHLIGHT  */}
 
-        <section className="bg-white pt-10 pb-10 lg:pt-[60px] lg:pb-20 lg:px-32">
+        <section className="bg-white pt-10 pb-10 lg:pt-[60px] lg:pb-20 md:px-3 lg:px-10 xl:px-32">
           <div className="container mx-auto ">
             <p
               className="text-lg font-normal text-center uppercase mb-10 text-gray-500 tracking-[4px]"
@@ -398,9 +403,9 @@ const LandingPage = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              {news.slice(0,3).map((newsItem) => (
-                <div className="w-full  md:w-1/2 lg:w-1/3" key={newsItem.id}>
-                  <div className="mx-auto mb-10 max-w-[370px]">
+              {news.slice(0, 3).map((newsItem) => (
+                <div className="w-full space-x-10 md:w-1/2 lg:w-1/3 " key={newsItem.id}>
+                  <div className="mx-auto mb-10 md:max-w-[300px] xl:max-w-[370px]">
                     <div className="mb-5 overflow-hidden rounded">
                       <img
                         src={newsItem.url}
@@ -430,7 +435,7 @@ const LandingPage = () => {
                       <Button
                         className="-ml-4"
                         color="#fff"
-                        onClick={() => navigate(`/detailnews/${newsItem.id}`)}
+                        onClick={() => navigate(`/detail/${newsItem.id}`)}
                       >
                         <p className="font-semibold text-base">Selengkapnya</p>
                         <HiOutlineArrowRight className="ml-2 h-5 w-4 mt-1" />
@@ -455,7 +460,7 @@ const LandingPage = () => {
         >
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="lg:grid lg:grid-cols-2 justify-items-center">
-            <div className="text-left w-auto  ml-5 lg:ml-[20%] lg:pt-5">
+            <div className="text-left w-auto  ml-5 xl:ml-[20%] lg:pt-5">
               <p className="text-base font-normal uppercase mb-2 text-gray-500 tracking-[4px]">
                 WHISTLE BLOWING
               </p>
@@ -482,7 +487,7 @@ const LandingPage = () => {
 
               <div className="flex space-x-4 mt-4">
                 <Button className="">
-                  <a href={pdf} target="_blank">
+                  <a href={pdf} target="_blank" >
                     Read More
                   </a>
                 </Button>
@@ -507,10 +512,11 @@ const LandingPage = () => {
         </div>
 
         <hr className="w-[80%] mx-auto" />
+
         {/* network  */}
         <div className="text-center mt-9 bg-slate-50 py-10 border-b">
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
-          <div className="xl:grid xl:grid-cols-2 justify-items-center space-x-4 lg:space-x-10">
+          <div className="lg:grid lg:grid-cols-2 justify-items-center space-x-4 lg:space-x-10">
             <iframe
               data-aos="fade-in"
               data-aos-duration="1000"

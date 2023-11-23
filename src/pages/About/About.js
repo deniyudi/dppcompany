@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import GroupCompany from "../../assets/About/group.png";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { about, background7,} from "../../assets";
+import { about, background8,} from "../../assets";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const title = "Tentang Kami";
   return (
     <>
       <main className="h-full w-full bg-white">
-        <BackgroundOverlay content={title} gambar={background7} />
+        <BackgroundOverlay content={title} gambar={background8} />
 
         {/* <Herosection content={title}/> */}
 

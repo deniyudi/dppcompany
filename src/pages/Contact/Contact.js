@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Accordion } from "flowbite-react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
 import { background13 } from "../../assets";
@@ -6,9 +6,14 @@ import { useForm, ValidationError } from "@formspree/react";
 import {  useNavigate } from "react-router-dom";
 
 export const Contact = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [email, setEmail] = useForm("mvojnago");
 
   const navigate = useNavigate();
+
 
   if (email.succeeded) {
     return <p>Pesan anda sudah terkirim</p>;

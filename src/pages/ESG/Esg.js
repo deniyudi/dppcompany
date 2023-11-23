@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background8 } from "../../assets";
+import { background9 } from "../../assets";
 
 const Esg = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <BackgroundOverlay content="ESG Coy" gambar={background8} />
+      <BackgroundOverlay content="ESG" gambar={background9} />
       <div className="relative pb-20 -mt-20 bg-slate-50">
         <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-6xl text-center lg:px-40">
           PT Dian Pandu Prtama 2030 Sustainability Aspiration
@@ -19,14 +23,14 @@ const Esg = () => {
                   <p className="text-3xl font-semibold">Environment</p>
                 </div>
               </div>
-              <div class="w-full md:7/12 lg:w-10/12 ">
-                <p class="text-xl lg:text-2xl font-medium mt-6 text-gray-900">
+              <div class="w-full md:7/12 lg:w-10/12 lg:pr-10 text-lg text-justify lg:text-2xl font-normal text-gray-900">
+                <p class=" mt-6">
                   We acknowledge that our operation affects, and is affected by,
                   the environment. All business segments in our portfolio
                   require energy and resources, as well as general waste and
                   carbon emissions.
                 </p>
-                <p class=" text-xl lg:text-2xl font-medium mt-4 text-gray-900">
+                <p class=" mt-4 ">
                   At United Tractors, we act responsibly towards our environment
                   in line with Moving as One, as we are committed to sustainable
                   practices and ESG implementation for a better future,
@@ -42,7 +46,7 @@ const Esg = () => {
 
         <div class="absolute w-full px-4 lg:px-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="bg-yellow-200 p-8 rounded-lg shadow-md">
-            <ul className="text-lg font-semibold lg:text-2xl lg:font-bold lg:space-y-5 list-disc lg:px-16 lg:py-6">
+            <ul className="text-lg font-semibold lg:text-2xl lg:font-semibold lg:space-y-5 list-disc lg:px-16 lg:py-6">
               <li>Reduce group-wide scope 1 and 2 greenhouse gas by 30%</li>
               <li>22% renewable energy to supply operations</li>
               <li>Water management refers to each business unit category</li>
@@ -59,8 +63,8 @@ const Esg = () => {
                   <p className="text-3xl font-semibold">Social</p>
                 </div>
               </div>
-              <div class="w-full md:7/12 lg:w-10/12 ">
-                <p class="text-xl lg:text-2xl font-medium mt-6 text-gray-900">
+              <div class="w-full md:7/12 lg:w-10/12 lg:pr-10 text-justify text-lg lg:text-2xl font-normal text-gray-900">
+                <p class=" mt-6 ">
                   The broad social aspect of ESG is reflected in the
                   relationships between United Tractors and its workforce, the
                   societies in which it operates, and the sociodynamics
@@ -70,7 +74,7 @@ const Esg = () => {
                   employee engagement, community empowerment, customer
                   satisfaction, and public relations.
                 </p>
-                <p class=" text-xl lg:text-2xl font-medium mt-4 text-gray-900">
+                <p class=" mt-4">
                   In this sense, we can make a difference in trust, confidence,
                   and effective stakeholder engagement. These are fundamental to
                   support our objective: a portfolio transition as a
@@ -84,7 +88,7 @@ const Esg = () => {
 
         <div class="absolute w-full px-4 lg:px-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="bg-yellow-200 p-8 rounded-lg shadow-md">
-            <ul className="text-lg font-semibold lg:text-2xl lg:font-bold lg:space-y-5 list-disc lg:px-16 lg:py-6">
+            <ul className="text-lg font-semibold lg:text-2xl lg:font-semibold lg:space-y-5 list-disc lg:px-16 lg:py-6">
               <li>
                 Champion actions to support employee diversity, equity, and
                 inclusion
@@ -109,8 +113,8 @@ const Esg = () => {
                   <p className="text-3xl font-semibold">Governance</p>
                 </div>
               </div>
-              <div class="w-full md:7/12 lg:w-10/12 ">
-                <p class="text-xl lg:text-2xl font-medium mt-6 text-gray-900">
+              <div class="w-full md:7/12 lg:w-10/12  lg:pr-10 text-justify text-lg lg:text-2xl font-normal text-gray-900 ">
+                <p class="  mt-6 ">
                   The broad social aspect of ESG is reflected in the
                   relationships between United Tractors and its workforce, the
                   societies in which it operates, and the sociodynamics
@@ -120,7 +124,7 @@ const Esg = () => {
                   employee engagement, community empowerment, customer
                   satisfaction, and public relations.
                 </p>
-                <p class=" text-xl lg:text-2xl font-medium mt-4 text-gray-900">
+                <p class="  mt-4">
                   In this sense, we can make a difference in trust, confidence,
                   and effective stakeholder engagement. These are fundamental to
                   support our objective: a portfolio transition as a
@@ -134,7 +138,7 @@ const Esg = () => {
 
         <div class="absolute w-full px-4 lg:px-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="bg-yellow-200 p-8 rounded-lg shadow-md">
-            <ul className="text-lg font-semibold lg:text-2xl lg:font-bold lg:space-y-5 list-disc lg:px-16 lg:py-6">
+            <ul className="text-lg font-semibold lg:text-2xl lg:font-semibold lg:space-y-5 list-disc lg:px-16 lg:py-6 ">
               <li>
                 Increase our business resilience by growing non-coal revenues to
                 50%

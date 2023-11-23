@@ -76,7 +76,10 @@ import weldercertification from "./LandingPage/weldercertification.JPG";
 import fabrication from "./LandingPage/fabrication.JPG";
 import imgrounded from "./LandingPage/ronded.png";
 
+import coba from "./TimelineCycle.jpg"
+
 export {
+  coba,
   landing1,
   fabrication1,
   fabrication2,

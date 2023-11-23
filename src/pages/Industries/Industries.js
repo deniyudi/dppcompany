@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
 import "../../../node_modules/slick-carousel/slick/slick.css";
@@ -28,14 +28,18 @@ import {
   pmp,
   pli,
   mapdpp,
-  background8,
   fabrication1,
   fabrication2,
   fabrication3,
   fabrication4,
+  background7,
 } from "../../assets";
 
 const Industries = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const data = "Bisnis Kami";
   const settings = {
     // dots: true,
@@ -72,7 +76,7 @@ const Industries = () => {
 
   return (
     <>
-      <BackgroundOverlay content={data} gambar={background8} />
+      <BackgroundOverlay content={data} gambar={background7} />
 
       <div className=" mx-auto text-center px-5 lg:w-[80%] lg:mb-24 lg:px-0">
         <p className="lg:font-normal lg:text-2xl text-center">
