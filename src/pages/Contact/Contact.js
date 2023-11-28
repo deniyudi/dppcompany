@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Accordion } from "flowbite-react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background13 } from "../../assets";
+import { background13, contact } from "../../assets";
 import { useForm, ValidationError } from "@formspree/react";
 import {  useNavigate } from "react-router-dom";
 
@@ -23,7 +23,7 @@ export const Contact = () => {
 
   return (
     <>
-      <BackgroundOverlay content={data} gambar={background13} />
+      <BackgroundOverlay content={data} gambar={contact} />
 
       <div className="md:grid md:grid-cols-2 md:px-12 lg:px-20 xl:px-44 2xl:px-60">
         <div className="px-6 md:pt-10 lg:pt-10">

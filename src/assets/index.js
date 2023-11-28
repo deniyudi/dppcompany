@@ -60,9 +60,18 @@ import background13 from "./BackgroundOverlay/background13.JPG";
 import background15 from "./BackgroundOverlay/background15.JPG";
 import background16 from "./BackgroundOverlay/background16.jpeg";
 import background17 from "./BackgroundOverlay/background18.JPG";
+import esg from "./BackgroundOverlay/esg.JPG";
+import contact from "./BackgroundOverlay/contact.JPG";
 
 // ABOUT
 import about from "./About/about.JPG";
+import companystructure from "./About/structure.jpg";
+
+//BOD
+import ari from "./About/presdir/Ari Sasongko.jpeg"
+import amalik from "./About/presdir/Amalik.jpeg"
+import leo from "./About/presdir/Leomahesa.jpeg"
+import haryono from "./About/presdir/YFX Haryono.jpeg"
 
 //CSR
 import dppgreen from "./ProgramCSR/green.JPG";
@@ -79,6 +88,10 @@ import imgrounded from "./LandingPage/ronded.png";
 import coba from "./TimelineCycle.jpg"
 
 export {
+  ari,amalik,leo,haryono,
+  companystructure,
+  esg,
+  contact,
   coba,
   landing1,
   fabrication1,

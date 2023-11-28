@@ -1,20 +1,30 @@
 import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background9 } from "../../assets";
+import { background9, esg } from "../../assets";
 
 const Esg = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <BackgroundOverlay content="ESG" gambar={background9} />
+      <BackgroundOverlay
+        content="Environment, Social, Governance (ESG)"
+        gambar={esg}
+      />
+
       <div className="relative pb-20 -mt-20 bg-slate-50">
-        <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-6xl text-center lg:px-40">
-          PT Dian Pandu Prtama 2030 Sustainability Aspiration
+        <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-5xl text-center lg:px-[400px]">
+          Environment, Social, Governance PT Dian Pandu Pratama
         </p>
-        <div class="pb-40 lg:pb-60 lg:pt-24 bg-gradient-to-b from-slate-50 to-slate-100">
+        <div className="text-xl text-[#333333] py-10 font-medium lg:pt-14 lg:font-medium lg:text-2xl text-center lg:px-40">
+          Saat ini, PT Dian Pandu Pratama telah memulai langkah-langkah untuk
+          menerapkan program ESG (Environmental, Social, and Governance) dengan
+          aktif mencatat jumlah emisi yang dihasilkan oleh operasional
+          perusahaan, sebagai upaya untuk meningkatkan tanggung jawab sosial dan
+          lingkungan.
+        </div>
+        {/* <div class="pb-40 lg:pb-60 lg:pt-24 bg-gradient-to-b from-slate-50 to-slate-100">
           <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
             <div class="space-y-6 md:space-y-0 lg:flex  lg:items-center lg:gap-12">
               <div class="md:5/12 lg:w-3/12">
@@ -153,9 +163,9 @@ const Esg = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="pt-40 bg-slate-50"></div>
+      {/* <div className="pt-40 bg-slate-50"></div> */}
     </>
   );
 };

@@ -12,11 +12,11 @@ const MilestoneAward = () => {
     <>
    <BackgroundOverlay content={title} gambar={background3}/>
     <div className='my-20 px-20 '>
-      <img src={coba}/>
+      <img src={coba} alt='milestone'/>
     </div>
-    <div className='px-6 mb-24 -mt-8 xl:ml-80'>
-      <img src='https://www.uniquip.co.id/wp-content/uploads/2023/02/Awards-2-1-1024x724.jpg'/>
-    </div>
+    {/* <div className='px-6 mb-24 -mt-8 xl:ml-80'>
+      <img alt='milestone' src='https://www.uniquip.co.id/wp-content/uploads/2023/02/Awards-2-1-1024x724.jpg'/>
+    </div> */}
     </>
   )
 }

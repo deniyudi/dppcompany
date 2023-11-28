@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import GroupCompany from "../../assets/About/group.png";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { about, background8,} from "../../assets";
+import { about, background8, companystructure,} from "../../assets";
 
 const About = () => {
   useEffect(() => {
@@ -144,8 +143,8 @@ const About = () => {
           <img
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="lg:w-[40%] mt-5 my-2 bg-white mx-auto"
-            src={GroupCompany}
+            className="lg:w-[60%] mt-5 my-2 bg-white mx-auto"
+            src={companystructure}
             alt="branch"
           />
         </div>

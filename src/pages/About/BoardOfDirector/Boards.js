@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import BackgroundOverlay from "../../../components/Fragments/BackgroundOverlay";
-import { background17 } from "../../../assets";
+import { amalik, ari, background17, haryono, leo } from "../../../assets";
 
 const Boards = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -60,15 +59,43 @@ const Boards = () => {
           </p> */}
           {/* <hr className="w-[30%]  mx-auto" /> */}
           <div class="pb-20 lg:pb-24 pt-24 lg:pt-24 bg-gradient-to-b from-slate-50 to-slate-100">
-          <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
+            <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
               <div class="space-y-6 md:space-y-0 md:flex md:gap-10 lg:flex  lg:gap-12">
                 <div class="md:w-5/12 lg:w-6/12 xl:w-5/12 ">
                   <div className=" mb-10 mx-10 ">
-                    <img
-                      className="aspect-square"
-                      alt="bod"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/1200px-Joko_Widodo_2019_official_portrait.jpg"
-                    />
+                    <img className="aspect-square" alt="bod" src={ari} />
+                    <div className="bg-gray-200 text-center pb-3 h-full">
+                      <h3 className="font-bold text-xl md:text-lg py-2 uppercase tracking-[1px]">
+                        Arie Sasongko
+                      </h3>
+                      <p className="-mt-1 text-base font-medium md:text-sm lg:text-base ">
+                        President Director
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-7/12 lg:w-10/12 lg:pr-10 text-lg text-justify md:text-base lg:text-2xl lg:-mt-10 font-normal  text-gray-900">
+                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">
+                    Arie Sasongko
+                  </p>
+                  <p class="mt-4">
+                    Bergabung pada United Tractors group pada tahun 2001, saat
+                    ini beliau menjadi President Direktur PT Dian Pandu Pratama
+                    sekaligus Division Head HCGSESR di PT United Tractors Pandu
+                    Engineering. Pernah berkarya juga di PT Universal Tekno
+                    Reksajaya pada tahun 2012 sampai 2020 menjabat sebagai
+                    Deputy HFAIT Division Head dan HFAIT Division Head.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-20 lg:py-24 bg-gradient-to-b from-slate-50 to-slate-100">
+            <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
+              <div class="space-y-6 md:space-y-0 md:flex md:gap-10 lg:flex  lg:gap-12">
+                <div class="md:w-5/12 lg:w-6/12 xl:w-5/12 ">
+                  <div className=" mb-10 mx-10 ">
+                    <img className="aspect-square" alt="bod" src={amalik} />
                     <div className="bg-gray-200 text-center pb-3 h-full">
                       <h3 className="font-bold text-xl md:text-lg py-2 uppercase tracking-[1px]">
                         Amalik
@@ -80,7 +107,9 @@ const Boards = () => {
                   </div>
                 </div>
                 <div class="w-full md:w-7/12 lg:w-10/12 lg:pr-10 text-lg text-justify md:text-base lg:text-2xl lg:-mt-10 font-normal  text-gray-900">
-                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">Joko Widodo</p>
+                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">
+                    Amalik
+                  </p>
                   <p class="mt-4">
                     We acknowledge that our operation affects, and is affected
                     by, the environment.
@@ -94,37 +123,65 @@ const Boards = () => {
               </div>
             </div>
           </div>
-
           <div class="py-20 lg:py-24 bg-gradient-to-b from-slate-50 to-slate-100">
             <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
               <div class="space-y-6 md:space-y-0 md:flex md:gap-10 lg:flex  lg:gap-12">
                 <div class="md:w-5/12 lg:w-6/12 xl:w-5/12 ">
                   <div className=" mb-10 mx-10 ">
-                    <img
-                      className="aspect-square"
-                      alt="bod"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/1200px-Joko_Widodo_2019_official_portrait.jpg"
-                    />
+                    <img className="aspect-square" alt="bod" src={leo} />
                     <div className="bg-gray-200 text-center pb-3 h-full">
                       <h3 className="font-bold text-xl md:text-lg py-2 uppercase tracking-[1px]">
-                        Amalik
+                        Leomahesa Hirawan
                       </h3>
                       <p className="-mt-1 text-base font-medium md:text-sm lg:text-base ">
-                        Director of HCGAEHSCSR, Legal MS & IT
+                        Director
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="w-full md:w-7/12 lg:w-10/12 lg:pr-10 text-lg text-justify md:text-base lg:text-2xl lg:-mt-10 font-normal  text-gray-900">
-                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">Joko Widodo</p>
-                  <p class="mt-4">
-                    We acknowledge that our operation affects, and is affected
-                    by, the environment.
+                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">
+                    Leomahesa Hirawan
                   </p>
-                  <p class=" mt-4 ">
-                    At United Tractors, we act responsibly towards our
-                    environment in line with Moving as One, as we are committed
-                    to sustainable practices and ESG implementation for a better
+                  <p class="mt-4">
+                    Bergabung pada PT United Tractors Pandu Engineering pada
+                    tahun 2012, saat ini beliau menjadi Direktur PT Dian Pandu
+                    Pratama sekaligus menjabat sebagai General Manager di PT
+                    United Tractors Pandu Engineering. Saat ini beliau juga
+                    aktif menjadi Tax Advisor untuk YKBUT & Kanitra Group.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-20 lg:py-24 bg-gradient-to-b from-slate-50 to-slate-100">
+            <div class="container m-auto lg:px-20  text-gray-600 md:px-12 ">
+              <div class="space-y-6 md:space-y-0 md:flex md:gap-10 lg:flex  lg:gap-12">
+                <div class="md:w-5/12 lg:w-6/12 xl:w-5/12 ">
+                  <div className=" mb-10 mx-10 ">
+                    <img className="aspect-square" alt="bod" src={haryono} />
+                    <div className="bg-gray-200 text-center pb-3 h-full">
+                      <h3 className="font-bold text-xl md:text-lg py-2 uppercase tracking-[1px]">
+                        YFX Haryono Sulistio
+                      </h3>
+                      <p className="-mt-1 text-base font-medium md:text-sm lg:text-base ">
+                        Director
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-7/12 lg:w-10/12 lg:pr-10 text-lg text-justify md:text-base lg:text-2xl lg:-mt-10 font-normal  text-gray-900">
+                  <p class="mt-3 text-2xl text-center md:text-left lg:text-3xl font-bold">
+                    YFX Haryono Sulistio
+                  </p>
+                  <p class="mt-4">
+                    Bergabung pada PT United Tractors Pandu Engineering pada
+                    tahun 1988, saat ini beliau menjadi Direktur PT Dian Pandu
+                    Pratama dan pernah menjabat sebagai Subcont Development
+                    Department Head di PT United Tractors Pandu Engineering.
+                    Saat ini beliau juga menjalankan organisasi dari PT United
+                    Tractors Pandu Engineering yaitu Koperasi Pra dan Purna
+                    Bhakti PATRIA sebagai Ketua Umum.
                   </p>
                 </div>
               </div>

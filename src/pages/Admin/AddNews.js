@@ -8,6 +8,11 @@ const AddNews = () => {
   const [category, setCategory] = useState("");
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
+  // const [description, setDescription] = useState('');
+
+  const handleDescriptionChange = (event) => {
+    setDesc(event.target.value);
+  };
 
   const navigate = useNavigate();
 
@@ -34,6 +39,8 @@ const AddNews = () => {
     } catch (error) {
       console.log(error.message);
     }
+
+    
   };
 
   return (
@@ -65,14 +72,16 @@ const AddNews = () => {
               Deskripsi
             </label>
             <textarea
-              rows="4"
+              rows="5"
               name="deskripsi"
               id="deskripsi"
               placeholder="Masukkan Deskripsi"
               class="w-full resize-none normal-case rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
-            ></textarea>
+            />
+            
+            {/* <p>Entered Description: {desc}</p> */}
           </div>
           <div className="mb-5">
             <label

@@ -20,9 +20,7 @@ import {
   xprovesselbig,
 } from "../../assets";
 
-
 export const Products = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -66,11 +64,19 @@ export const Products = () => {
 
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
-            <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+            <h2
+              className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               Fabrication Support Patria
             </h2>
 
-            <div className="mx-auto w-full p-3 sm:grid sm:px-10 sm:grid-cols-1 sm:justify-center md:flex md:flex-wrap md:px-0 lg:px-0 ">
+            <div
+              className="mx-auto w-full p-3 sm:grid sm:px-10 sm:grid-cols-1 sm:justify-center md:flex md:flex-wrap md:px-0 lg:px-0 "
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               {productImages.map((product, index) => (
                 <div
                   key={index}
@@ -139,10 +145,18 @@ export const Products = () => {
 
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
-            <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+            <h2
+              className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               Clients Support
             </h2>
-            <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2  dark:text-gray-400 text-center">
+            <div
+              className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2  dark:text-gray-400 text-center"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               <img
                 className="flex justify-center items-center mx-auto"
                 src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/1AFbQ0GKhNMlFwXGrpvOSjpWuW6v09eDoXZkjYqr.png"

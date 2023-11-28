@@ -10,7 +10,7 @@ const BackgroundOverlay = (props) => {
       />
       <div className="w-full h-full absolute bg-imgGelap top-0 left-0"></div>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-        <h1 className="uppercase text-4xl sm:text-[40px] md:text-5xl lg:text-[44px] font-medium text-[#fff]">
+        <h1 className="text-center uppercase text-2xl sm:text-[40px] md:text-5xl lg:text-[44px] font-medium text-[#fff]">
           {props.content}
         </h1>
       </div>

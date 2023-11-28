@@ -18,6 +18,18 @@ export const Navbar = () => {
   const isActive = (path) => location.pathname === path;
   const [open, setOpen] = useState(false);
 
+  const [color,setColor] = useState(false)
+
+  const changeColor = ()=>{
+    if(window.scrollY >= 200){
+      setColor(true)
+    }else{
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll',changeColor)
+
   return (
     <>
       <nav className="fixed w-full top-0 z-40 bg-slate-50 font-primary">

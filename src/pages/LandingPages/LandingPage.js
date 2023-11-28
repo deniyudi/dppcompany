@@ -95,7 +95,7 @@ const LandingPage = () => {
         <div
           className="text-center bg-slate-50 py-10"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="lg:grid lg:grid-cols-2 justify-items-center">
@@ -160,7 +160,7 @@ const LandingPage = () => {
             </div>
             <img
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
               className="text-center mx-auto lg:mt-6 lg:w-[600px] h-auto"
               src={landing1}
               alt="hoe"
@@ -175,7 +175,7 @@ const LandingPage = () => {
             <div class="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
               <img
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
                 // className="lg:rounded-e-[50px] rounded"
                 src={imgrounded}
                 alt="hoe"
@@ -184,7 +184,7 @@ const LandingPage = () => {
             <div
               className=" text-left w-auto ml-5 pt-5"
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="2000"
             >
               <p className="text-base font-normal uppercase mb-4 md:text-center lg:text-left text-gray-500 tracking-[4px] ">
                 Vision & Mission
@@ -323,7 +323,7 @@ const LandingPage = () => {
             </p>
             <div
               data-aos="fade-in"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
               class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
             >
               <img
@@ -445,18 +445,14 @@ const LandingPage = () => {
                 </div>
               ))}
             </div>
-            {/* <Button className="mx-auto" onClick={()=>navigate('/news')}>
-              <p>Baca Lebih Banyak</p>
-              <HiOutlineBookOpen className="ml-2 h-5 w-5" />
-            </Button> */}
           </div>
         </section>
 
         {/* whistle blowing  */}
         <div
           className="text-center bg-slate-50 py-10"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos="fade-in"
+          data-aos-duration="1500"
         >
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="lg:grid lg:grid-cols-2 justify-items-center">
@@ -502,8 +498,8 @@ const LandingPage = () => {
               </div>
             </div>
             <img
-              data-aos="fade-bottom"
-              data-aos-duration="2000"
+              data-aos="fade-in"
+              data-aos-duration="1500"
               className="text-center mx-auto"
               src="https://www.ykbut.co.id/static/media/logowbs.df574081f1967211f6be.png"
               alt="hoe"
@@ -540,7 +536,7 @@ const LandingPage = () => {
                 Butuh bantuan untuk service kami? hubungi kami melalui contact
                 di Bawah ini
               </p>
-              <Button>
+              <Button onClick={() => navigate(`/contact`)}>
                 <p>Contact Us</p>
                 <HiOutlineArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -552,6 +548,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
+        
       </main>
     </>
   );
