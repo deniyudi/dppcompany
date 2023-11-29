@@ -5,8 +5,6 @@ import { logodpp } from "../../assets";
 
 export const DetailNews = () => {
   const [news, setNews] = useState({});
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
   const { id } = useParams();
 
   useEffect(() => {
@@ -15,7 +13,6 @@ export const DetailNews = () => {
       try {
         const response = await axios.get(`http://localhost:5000/upload/${id}`);
         setNews(response.data);
-        
       } catch (error) {
         console.error("Error fetching news details:", error);
       }
@@ -26,9 +23,7 @@ export const DetailNews = () => {
     }
   }, [id]);
 
-
-
-  // Split Desc 
+  // Split Desc
   const splitTextIntoParagraphs = (text) => {
     if (!text) return [];
     const sentences = text.split(". "); // Mungkin perlu menyesuaikan berdasarkan pemisah kalimat yang sesuai
@@ -39,9 +34,9 @@ export const DetailNews = () => {
     return paragraphs;
   };
 
-  const paragraphs = splitTextIntoParagraphs(news.desc);  
+  const paragraphs = splitTextIntoParagraphs(news.desc);
 
-  // Format tanggal 
+  // Format tanggal
   let formattedDate = "";
 
   if (news.createdAt) {
@@ -59,7 +54,7 @@ export const DetailNews = () => {
   }
 
   return (
-    <main className="h-full w-full mt-10 lg:mt-20">
+    <main className="h-full w-full mt-10 lg:mt-20 ">
       <div className="grid px-10 lg:w-[54%] mx-auto ">
         <div className="mx-auto text-center mt-20 ">
           <p class="mt-3 mb-6 text-3xl lg:text-4xl  font-semibold leading-10 text-[#222222]">

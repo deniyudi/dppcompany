@@ -111,14 +111,13 @@ const Boards = () => {
                     Amalik
                   </p>
                   <p class="mt-4">
-                    We acknowledge that our operation affects, and is affected
-                    by, the environment.
+                  Bergabung pada PT United Tractors pada tahun 1988 dan saat ini menjabat menjadi Direktur PT Dian Pandu Pratama.
                   </p>
-                  <p class=" mt-4 ">
+                  {/* <p class=" mt-4 ">
                     At United Tractors, we act responsibly towards our
                     environment in line with Moving as One, as we are committed
                     to sustainable practices and ESG implementation for a better
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ export const Navbar = () => {
   const [color,setColor] = useState(false)
 
   const changeColor = ()=>{
-    if(window.scrollY >= 200){
+    if(window.scrollY >= 600){
       setColor(true)
     }else{
       setColor(false)
@@ -32,7 +32,11 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full top-0 z-40 bg-slate-50 font-primary">
+      <nav className="fixed w-full top-0 z-40 font-primary bg-slate-50"
+  //     {`fixed w-full top-0 z-40 font-primary ${
+  //   !color ? "bg-transparent" : "bg-slate-50"
+  // }`}
+  >
         <div className="xl:px-[10%] flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" class="flex items-center">
             <img src={logodpp} class="h-16" alt=" Logo" />

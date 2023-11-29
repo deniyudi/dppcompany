@@ -66,6 +66,7 @@ import contact from "./BackgroundOverlay/contact.JPG";
 // ABOUT
 import about from "./About/about.JPG";
 import companystructure from "./About/structure.jpg";
+import milestone from "./About/milestone.jpg"
 
 //BOD
 import ari from "./About/presdir/Ari Sasongko.jpeg"
@@ -85,14 +86,13 @@ import weldercertification from "./LandingPage/weldercertification.JPG";
 import fabrication from "./LandingPage/fabrication.JPG";
 import imgrounded from "./LandingPage/ronded.png";
 
-import coba from "./TimelineCycle.jpg"
 
 export {
   ari,amalik,leo,haryono,
   companystructure,
+  milestone,
   esg,
   contact,
-  coba,
   landing1,
   fabrication1,
   fabrication2,
