@@ -40,7 +40,7 @@ const EditNews = () => {
         formData.append("desc",desc);
         formData.append("category",category);
         try {
-            await axios.patch(`http://localhost:5000/upload/${id}`, formData,{
+            await axios.patch(`http://20.205.171.175:5000/upload/${id}`, formData,{
                 headers:{
                     "Content-Type":"multipart/form-data"
                 }
