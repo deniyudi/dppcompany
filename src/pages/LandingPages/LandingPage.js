@@ -40,7 +40,7 @@ const LandingPage = () => {
   }, []);
 
   const getNews = async () => {
-    const response = await axios.get("http://localhost:5000/upload");
+    const response = await axios.get("http://20.205.171.175:5000/upload");
     setNews(response.data.reverse());
   };
 
