@@ -44,7 +44,7 @@ export const Products = () => {
   console.log(productImages);
   return (
     <>
-      <main className="w-full h-auto mx-auto">
+      <main className="w-full h-auto mx-auto overflow-x-hidden">
         {/*background overlay judul */}
         <BackgroundOverlay gambar={background15} content="Produk Support" />
         <div className="text-center px-6 mx-auto w-auto sm:px-6 sm:w-[500px] md:w-[600px] lg:w-[90%] lg:mb-13">

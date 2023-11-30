@@ -13,7 +13,7 @@ const Esg = () => {
         gambar={esg}
       />
 
-      <div className="relative pb-20 -mt-20 bg-slate-50">
+      <div className="relative pb-20 -mt-20 bg-slate-50 overflow-x-hidden">
         <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-5xl text-center lg:px-[200px]">
           Environment, Social, Governance 
         </p>

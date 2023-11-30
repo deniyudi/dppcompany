@@ -79,7 +79,7 @@ export const News = () => {
   };
 
   return (
-    <main className="w-full h-full justify-center mb-10 ">
+    <main className="w-full h-full justify-center mb-10 overflow-x-hidden ">
       <BackgroundOverlay content={data} gambar={gambarAtas[0].news} />
       {/* card news  */}
       <div className="mx-auto p-3 xl:px-32 lg:gap-0 sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">

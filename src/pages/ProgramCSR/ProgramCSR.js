@@ -138,7 +138,7 @@ const ProgramCSR = () => {
     <>
       <BackgroundOverlay gambar={background12} content={data} />
 
-      <div className="">
+      <div className="overflow-x-hidden">
         <h2 class="mb-8 lg:mb-10 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
           Misi Kami
         </h2>

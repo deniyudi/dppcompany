@@ -78,7 +78,7 @@ import haryono from "./About/presdir/YFX Haryono.jpeg"
 import dppgreen from "./ProgramCSR/green.JPG";
 
 //LANDING
-import bghome from "./LandingPage/bghome.png";
+import bghome from "./LandingPage/homedpp2.png";
 import landing1 from "./LandingPage/landang10.png";
 import logodpp from "./logodpp.png";
 import visimisi from "./LandingPage/visi1.JPG";

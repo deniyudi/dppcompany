@@ -54,7 +54,7 @@ export const DetailNews = () => {
   }
 
   return (
-    <main className="h-full w-full mt-10 lg:mt-20 ">
+    <main className="h-full w-full mt-10 lg:mt-20 overflow-x-hidden">
       <div className="grid px-10 lg:w-[54%] mx-auto ">
         <div className="mx-auto text-center mt-20 ">
           <p class="mt-3 mb-6 text-3xl lg:text-4xl  font-semibold leading-10 text-[#222222]">

@@ -25,7 +25,7 @@ export const Contact = () => {
     <>
       <BackgroundOverlay content={data} gambar={contact} />
 
-      <div className="md:grid md:grid-cols-2 md:px-12 lg:px-20 xl:px-44 2xl:px-60">
+      <div className="md:grid md:grid-cols-2 md:px-12 lg:px-20 xl:px-44 2xl:px-60 overflow-x-hidden">
         <div className="px-6 md:pt-10 lg:pt-10">
           <h1 className="underline text-3xl font-semibold mb-3">Kontak Kami</h1>
           <h2 className="uppercase font-[640]">Kantor Pusat Cikarang</h2>

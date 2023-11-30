@@ -9,7 +9,7 @@ const About = () => {
   const title = "Tentang Kami";
   return (
     <>
-      <main className="h-full w-full bg-white">
+      <main className="h-full w-full bg-white ">
         <BackgroundOverlay content={title} gambar={background8} />
 
         {/* <Herosection content={title}/> */}

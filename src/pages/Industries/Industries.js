@@ -36,7 +36,6 @@ import {
 } from "../../assets";
 
 const Industries = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,9 +46,9 @@ const Industries = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay:true,
+    autoplay: true,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
   };
 
   function SampleNextArrow(props) {
@@ -62,7 +61,7 @@ const Industries = () => {
       />
     );
   }
-  
+
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -160,8 +159,8 @@ const Industries = () => {
               Welder Certification
             </p>
             <p className="mb-4 xl:text-justify  lg:text-sm xl:text-base">
-              Kompetensi merupakan salah satu pokok penting dalam pekerjaan
-              alat berat sehingga kami juga berfokus untuk menyediakan program
+              Kompetensi merupakan salah satu pokok penting dalam pekerjaan alat
+              berat sehingga kami juga berfokus untuk menyediakan program
               sertifikasi BNSP yang bekerja sama dengan Lembaga Sertifikasi
               Profesi (LSP) untuk manpower internal ataupun eksternal agar dapat
               sesuai kebutuhan para user/customer
@@ -195,7 +194,7 @@ const Industries = () => {
       </div>
 
       <hr className="mt-10 mb-10" />
-      <div className="text-center w-full h-full lg:mt-2">
+      <div className="text-center w-full h-full lg:mt-2 overflow-x-hidden">
         <h2
           data-aos="fade-in"
           data-aos-duration="2500"
@@ -213,7 +212,7 @@ const Industries = () => {
       </div>
 
       <hr className="mt-10 mb-10" />
-      <section class="bg-white dark:bg-gray-900">
+      <section class="bg-white dark:bg-gray-900 overflow-x-hidden">
         <div class="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
           <h2
             data-aos="fade-in"

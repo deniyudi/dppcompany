@@ -36,7 +36,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     getNews();
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const getNews = async () => {
@@ -65,7 +65,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <main className="h-full w-full bg-slate-50 overflow-hidden">
+      <main className="h-full w-full bg-slate-50 overflow-x-hidden">
         <div className="text-left w-auto mt-16 md:mt-24 ml-4 lg:ml-[10%] pt-16">
           <p className="lg:text-lg font-normal uppercase mb-3 text-gray-500 tracking-[6px]">
             Welcome to
@@ -404,7 +404,10 @@ const LandingPage = () => {
               data-aos-duration="1000"
             >
               {news.slice(0, 3).map((newsItem) => (
-                <div className="w-full space-x-10 md:w-1/2 lg:w-1/3 " key={newsItem.id}>
+                <div
+                  className="w-full space-x-10 md:w-1/2 lg:w-1/3 "
+                  key={newsItem.id}
+                >
                   <div className="mx-auto mb-10 md:max-w-[300px] xl:max-w-[370px]">
                     <div className="mb-5 overflow-hidden rounded">
                       <img
@@ -483,7 +486,7 @@ const LandingPage = () => {
 
               <div className="flex space-x-4 mt-4">
                 <Button className="">
-                  <a href={pdf} target="_blank" >
+                  <a href={pdf} target="_blank">
                     Read More
                   </a>
                 </Button>
@@ -548,8 +551,6 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-
-        
       </main>
     </>
   );

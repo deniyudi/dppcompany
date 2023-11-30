@@ -2,7 +2,7 @@ import React from "react";
 
 const BackgroundOverlay = (props) => {
   return (
-    <div className="relative mt-24 mb-10 sm:mb-14 sm:mt-14 lg:mb-20 lg:mt-20 overflow-x-hidden">
+    <div className="relative mt-24 mb-10 sm:mb-14 sm:mt-14 lg:mb-20 lg:mt-20">
       <img
         src={props.gambar}
         alt="Product"
