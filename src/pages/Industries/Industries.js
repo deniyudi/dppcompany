@@ -79,7 +79,7 @@ const Industries = () => {
       <BackgroundOverlay content={data} gambar={background7} />
 
       <div className=" mx-auto text-center px-5 lg:w-[80%] lg:mb-24 lg:px-0">
-        <p className="lg:font-normal lg:text-2xl text-center">
+        <p className="lg:font-normal lg:text-lg xl:text-2xl text-center">
           Dalam menjalankan bisnis, kami fokus pada dua sektor ketenagakerjaan
           yaitu penyedia tenaga kerja (Manpower Support on Job Site) serta
           penyedia jasa fabrikasi dan perbaikan kendaraan alat berat
@@ -92,7 +92,7 @@ const Industries = () => {
       </div>
 
       <div
-        className="grid grid-cols-1 lg:grid-cols-4 mx-auto lg:px-32"
+        className="grid mt-1 grid-cols-1 lg:grid-cols-4 mx-auto lg:px-32"
         data-aos="fade-in"
         data-aos-duration="1500"
       >
@@ -111,10 +111,10 @@ const Industries = () => {
           </Slider>
 
           <div className="text-center w-full">
-            <p className="uppercase font-semibold text-2xl my-4 h-[76px] ">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px] ">
               Manufacturing Process
             </p>
-            <p className="mb-4 text-justify">
+            <p className="mb-4 xl:text-justify lg:text-sm xl:text-base">
               Kami menyediakan jasa fabrikasi, painting dan assembling alat
               berat dengan layanan manpower yang sesuai dengan kompetensi
               dibutuhkan oleh customer Manpower Support on Site
@@ -130,10 +130,10 @@ const Industries = () => {
             <img alt="12312" src={manpower4} />
           </Slider>
           <div className="text-center w-full">
-            <p className="uppercase font-semibold text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
               Manpower Support on Site
             </p>
-            <p className="mb-4 text-justify ">
+            <p className="mb-4 xl:text-justify  lg:text-sm xl:text-base">
               Dalam berupaya meningkatkan SDM di dalam bisnis AHEMCE dan PATRIA
               Group, kami selalu berusaha untuk dapat memberikan layanan terbaik
               dalam proses manpower solution di bidang Welder, Assembler, dan
@@ -156,10 +156,10 @@ const Industries = () => {
             <img alt="12312" src={weldertest3} />
           </Carousel> */}
           <div className="text-center w-full">
-            <p className="uppercase font-semibold text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
               Welder Certification
             </p>
-            <p className="mb-4 text-justify ">
+            <p className="mb-4 xl:text-justify  lg:text-sm xl:text-base">
               Kompetensi merupakan salah satu pokok penting dalam pekerjaan
               alat berat sehingga kami juga berfokus untuk menyediakan program
               sertifikasi BNSP yang bekerja sama dengan Lembaga Sertifikasi
@@ -182,10 +182,10 @@ const Industries = () => {
             <img alt="12312" src={manufacturing4} />
           </Carousel> */}
           <div className="text-center w-full">
-            <p className="uppercase font-semibold text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
               Mass - Production Project
             </p>
-            <p className="mb-4 text-justify">
+            <p className="mb-4 xl:text-justify lg:text-sm xl:text-base">
               Selain proses manufaktur industri dan layanan manpower, kami juga
               menyediakan pekerjaan borongan dalam proses konstruksi bangunan
               ataupun fabrikasi kendaran alat berat dan kapal tongkang

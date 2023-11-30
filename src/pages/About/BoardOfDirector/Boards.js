@@ -80,7 +80,7 @@ const Boards = () => {
                   </p>
                   <p class="mt-4">
                     Bergabung pada United Tractors group pada tahun 2001, saat
-                    ini beliau menjadi President Direktur PT Dian Pandu Pratama
+                    ini beliau menjadi Presiden Direktur PT Dian Pandu Pratama
                     sekaligus Division Head HCGSESR di PT United Tractors Pandu
                     Engineering. Pernah berkarya juga di PT Universal Tekno
                     Reksajaya pada tahun 2012 sampai 2020 menjabat sebagai
@@ -101,7 +101,7 @@ const Boards = () => {
                         Amalik
                       </h3>
                       <p className="-mt-1 text-base font-medium md:text-sm lg:text-base ">
-                        Director of HCGAEHSCSR, Legal MS & IT
+                        Director
                       </p>
                     </div>
                   </div>
@@ -111,7 +111,8 @@ const Boards = () => {
                     Amalik
                   </p>
                   <p class="mt-4">
-                  Bergabung pada PT United Tractors pada tahun 1988 dan saat ini menjabat menjadi Direktur PT Dian Pandu Pratama.
+                    Bergabung pada PT United Tractors pada tahun 1988 dan saat
+                    ini menjabat menjadi Direktur PT Dian Pandu Pratama.
                   </p>
                   {/* <p class=" mt-4 ">
                     At United Tractors, we act responsibly towards our

@@ -10,14 +10,14 @@ const Career = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = "Karier";
+  const data = "Karir";
 
   return (
     <>
       <BackgroundOverlay content={data} gambar={background10} />
       {/* {_renderCareer()} */}
 
-      <div className="w-full h-full xl:px-32 px-5 space-y-10 my-4">
+      <div className="w-full h-full xl:px-32 px-5 space-y-10 my-4 overflow-x-hidden">
         <div className=" text-xl font-semibold lg:text-3xl xl:text-4xl lg:font-bold">
           PT Dian Pandu Pratama adalah perusahaan yang bergerak di bidang
           pengelolaan sumber daya manusia, penyedia tenaga kerja (Labour Supply)
@@ -33,27 +33,28 @@ const Career = () => {
           }
           modal
           nested
+          contentStyle={{ maxHeight: '80vh', overflowY: 'auto' }}
         >
           {(close) => (
-            <div className="">
-              <div className="px-4">
+            <div className="w-full ">
+              <div className="px-4 ">
                 <button
                   className="float-right text-3xl mt-0 mr-4 font-bold"
                   onClick={close}
                 >
                   &times;
                 </button>
-                <img src={logodpp} className="w-60 my-4" alt="logo" />
+                <img src={logodpp} className="lg:w-60 my-4" alt="logo" />
               </div>
               <hr className="w-full mx-auto border-gray-400" />
-              <div className="text-3xl mt-4 font-semibold mx-auto text-center">
+              <div className="lg:text-3xl mt-4 w font-semibold mx-auto text-center">
                 Pemberitahuan !
               </div>
-              <div className="text-xl mx-auto text-center my-5">
+              <div className="lg:text-xl mx-auto text-center my-5">
                 Hati-hati penipuan terhadap penerimaan karyawan PT Dian Pandu
                 Pratama
               </div>
-              <div className="space-y-4 p-3 text-justify text-lg">
+              <div className="space-y-4 p-3 text-justify lg:text-lg">
                 <p className="">
                   Kami, PT Dian Pandu Pratama, dengan ini menghimbau masyarakat
                   agar berhati-hati dan mewaspadai modus penipuan recruitment,

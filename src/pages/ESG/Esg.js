@@ -14,10 +14,10 @@ const Esg = () => {
       />
 
       <div className="relative pb-20 -mt-20 bg-slate-50">
-        <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-5xl text-center lg:px-[400px]">
-          Environment, Social, Governance PT Dian Pandu Pratama
+        <p className="text-3xl py-10 font-bold lg:pt-20 lg:font-bold lg:text-5xl text-center lg:px-[200px]">
+          Environment, Social, Governance 
         </p>
-        <div className="text-xl text-[#333333] py-10 font-medium lg:pt-14 lg:font-medium lg:text-2xl text-center lg:px-40">
+        <div className="text-xl text-[#333333] text-justify  font-medium px-6 lg:pt-5 lg:font-medium lg:text-2xl  lg:px-40">
           Saat ini, PT Dian Pandu Pratama telah memulai langkah-langkah untuk
           menerapkan program ESG (Environmental, Social, and Governance) dengan
           aktif mencatat jumlah emisi yang dihasilkan oleh operasional

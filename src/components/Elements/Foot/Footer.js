@@ -42,7 +42,7 @@ export const Footer = () => {
                 <ul class=" text-gray-600 font-normal  dark:text-gray-400">
                   <li class="mb-4">
                     <a href="/about" class="hover:underline ">
-                      Our Network
+                      About
                     </a>
                   </li>
                   <li class="mb-4">
@@ -100,7 +100,7 @@ export const Footer = () => {
                 <div class="flex mt-4 space-x-5 sm:mt-0 col-span-2 md:mt-4 w-full">
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
-                      href="/"
+                      href=""
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <i class="fa fa-facebook "></i>
@@ -108,7 +108,7 @@ export const Footer = () => {
                   </div>
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
-                      href="/"
+                      href="mailto:contact@dpp.co.id"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <i class="fa fa-envelope "></i>
@@ -116,15 +116,15 @@ export const Footer = () => {
                   </div>
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
-                      href="/"
+                      href="https://www.youtube.com/@dppofficial3520"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
-                      <i class="fa fa-twitter "></i>
+                      <i class="fa fa-youtube-play "></i>
                     </a>
                   </div>
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
-                      href="/"
+                      href="https://instagram.com/official.dpp?igshid=MzRlODBiNWFlZA=="
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <i class="fa fa-instagram "></i>
@@ -132,7 +132,7 @@ export const Footer = () => {
                   </div>
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
-                      href="/"
+                      href="https://www.linkedin.com/company/pt-dian-pandu-pratama"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <i class="fa fa-linkedin "></i>

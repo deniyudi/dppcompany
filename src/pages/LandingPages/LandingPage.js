@@ -65,7 +65,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <main className="h-full w-full bg-slate-50 ">
+      <main className="h-full w-full bg-slate-50 overflow-hidden">
         <div className="text-left w-auto mt-16 md:mt-24 ml-4 lg:ml-[10%] pt-16">
           <p className="lg:text-lg font-normal uppercase mb-3 text-gray-500 tracking-[6px]">
             Welcome to
