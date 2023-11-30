@@ -30,7 +30,7 @@ const AddNews = () => {
     formData.append("desc", desc);
     formData.append("category", category);
     try {
-      await axios.post("http://localhost:5000/upload", formData, {
+      await axios.post("http://20.205.171.175:5000/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

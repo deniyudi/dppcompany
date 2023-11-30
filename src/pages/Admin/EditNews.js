@@ -23,7 +23,7 @@ const EditNews = () => {
     }
 
     const getDataById = async ()=>{
-        const response = await axios.get(`http://localhost:5000/upload/${id}`);
+        const response = await axios.get(`http://20.205.171.175:5000/upload/${id}`);
 
         setTitle(response.data.judul);
         setFile(response.data.img)
