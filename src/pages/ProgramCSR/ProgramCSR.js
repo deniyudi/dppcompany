@@ -78,7 +78,7 @@ const ProgramCSR = () => {
 
     const getCsr = async () => {
       const response = await axios.get(
-        "http://localhost:5000/upload?category=csr"
+        "http://20.205.171.175:5000/upload?category=csr"
       );
       setCsr(response.data.reverse());
     };

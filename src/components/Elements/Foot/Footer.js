@@ -25,7 +25,7 @@ export const Footer = () => {
                         17.00)
                       </li>
                       <li>Plant operation (Sabtu-Minggu): 7.30-15.30</li>
-                      {/* <li>Area site mengikuti regulasi lokal.</li> */}
+                      <li>Area site mengikuti regulasi lokal.</li>
                     </ul>
                   </span>
                 </p>
@@ -98,14 +98,14 @@ export const Footer = () => {
                   Follow us
                 </h2>
                 <div class="flex mt-4 space-x-5 sm:mt-0 col-span-2 md:mt-4 w-full">
-                  <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
+                  {/* <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
                       href=""
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <i class="fa fa-facebook "></i>
                     </a>
-                  </div>
+                  </div> */}
                   <div class="lg:bg-slate-200 lg:rounded-full h-8 w-8 flex justify-center items-center">
                     <a
                       href="mailto:contact@dpp.co.id"
@@ -141,32 +141,7 @@ export const Footer = () => {
                 </div>
               </div>
 
-              {/* <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0 col-span-2 mx-auto  w-full">
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <i className="fa fa-facebook fa-1x"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <i className="fa fa-twitter fa-1x"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <i className="fa fa-linkedin fa-1x"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <i className="fa fa-instagram fa-1x"></i>
-                </a>
-              </div> */}
+              
             </div>
           </div>
 

@@ -14,14 +14,14 @@ const NewsAdmin = () => {
     setNews(response.data);
   };
 
-  const deleteNews = async (newsId)=>{
+  const deleteNews = async (newsId) => {
     try {
-        await axios.delete(`http://20.205.171.175:5000/upload/${newsId}`);
-        getNews();
+      await axios.delete(`http://20.205.171.175:5000/upload/${newsId}`);
+      getNews();
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
-  }
+  };
 
   const _renderNews = () => {
     return (
@@ -51,8 +51,8 @@ const NewsAdmin = () => {
                 </div>
 
                 <div className="grid-cols-2">
-                    <Link to={`/editnews/${news.id}`}>Edit</Link>
-                    <button onClick={()=>deleteNews(news.id)}>Delete</button>
+                  <Link to={`/editnews/${news.id}`}>Edit</Link>
+                  <button onClick={() => deleteNews(news.id)}>Delete</button>
                 </div>
               </div>
             </div>
