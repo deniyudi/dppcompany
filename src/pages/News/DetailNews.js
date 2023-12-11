@@ -57,17 +57,17 @@ export const DetailNews = () => {
     <main className="h-full w-full mt-10 lg:mt-20 overflow-x-hidden">
       <div className="grid px-10 lg:w-[54%] mx-auto ">
         <div className="mx-auto text-center mt-20 ">
-          <p class="mt-3 mb-6 text-3xl lg:text-4xl  font-semibold leading-10 text-[#222222]">
+          <p className="mt-3 mb-6 text-3xl lg:text-4xl  font-semibold leading-10 text-[#222222]">
             {news.judul}
           </p>
-          <p class="text-base font-normal leading-snug tracking-normal text-[#333333]">
+          <p className="text-base font-normal leading-snug tracking-normal text-[#333333]">
             {formattedDate}
           </p>
         </div>
-        <div class="relative m-0 overflow-hidden rounded-none bg-transparent mt-10 bg-clip-border aspect-square bg-gradient-to-r from-[#f6f5f5a4] to-[#e9e9e9]  text-gray-700 shadow-none flex items-center justify-center ">
-          <img src={news.url} alt="kiw" class="" />
-          <div class="absolute top-3 right-3 w-20 md:top-4 md:right-4 md:w-36 lg:top-5 lg:right-5 lg:w-40 px-3 py-1  bg-slate-50 rounded-full ">
-            <img src={logodpp} alt="logo" class="" />
+        <div className="relative m-0 overflow-hidden rounded-none bg-transparent mt-10 bg-clip-border aspect-square bg-gradient-to-r from-[#f6f5f5a4] to-[#e9e9e9]  text-gray-700 shadow-none flex items-center justify-center ">
+          <img src={news.url} alt="kiw" className="" />
+          <div className="absolute top-3 right-3 w-20 md:top-4 md:right-4 md:w-36 lg:top-5 lg:right-5 lg:w-40 px-3 py-1  bg-slate-50 rounded-full ">
+            <img src={logodpp} alt="logo" className="" />
           </div>
         </div>
         <div className="my-12 text-[#333333] font-normal text-xl text-justify space-y-10 ">

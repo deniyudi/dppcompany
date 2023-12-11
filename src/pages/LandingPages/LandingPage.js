@@ -6,7 +6,6 @@ import CountUp from "react-countup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import {
-  visimisi,
   weldercertification,
   fabrication,
   imgrounded,
@@ -35,6 +34,8 @@ import {
   pml,
   pmi,
   sigma,
+  wistle,
+  manufacturing,
 } from "../../assets";
 
 import pdf from "../../assets/File Pdf/Pedoman Whisle Blower YKBUT 2021.pdf";
@@ -96,9 +97,8 @@ const LandingPage = () => {
 
         {/* GAMBAR  */}
 
-        <div class="relative overflow-hidden mt-10">
-          <img src={bghome} alt="qwe" class="w-full h-auto" />
-          {/* <p class="absolute inset-0 flex items-center justify-center">Your text or content here</p> */}
+        <div className="relative overflow-hidden mt-10">
+          <img src={bghome} alt="imgbg"  loading="lazy" className="w-full h-full" />
         </div>
 
         {/* ===== KET DPP & MP =====  */}
@@ -182,7 +182,7 @@ const LandingPage = () => {
         <div className="text-center bg-slate-50 py-10">
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="xl:grid grid lg:grid-cols-2 xl:grid-cols-2 justify-items-center lg:px-5 xl:px-[10%]">
-            <div class="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
+            <div className="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
               <img
                 data-aos="fade-right"
                 data-aos-duration="1500"
@@ -232,7 +232,7 @@ const LandingPage = () => {
         </div>
 
         {/* bisnis & product ====================  */}
-        <div className="text-center pt-16 lg:pb-10 bg-white">
+        <div className="text-center pt-16 md:pb-10 bg-white">
           {/* <p className="text-3xl my-4 font-bold uppercase">Our Business</p> */}
           <p
             className="text-lg font-normal uppercase mb-3 text-gray-500 tracking-[4px]"
@@ -252,7 +252,7 @@ const LandingPage = () => {
               className="px-4 text-black text-left mb-4 sm:mb-12 md:w-64 lg:w-80 xl:w-96  "
             >
               <img
-                src={visimisi}
+                src={manufacturing}
                 alt="product"
                 className="w-full h-full aspect-video rounded-xl bg-cover hover:scale-105 transition-transform duration-300 transform "
               />
@@ -299,7 +299,7 @@ const LandingPage = () => {
 
         {/* fabrication  */}
         <div
-          className=" text-center py-10  bg-white px-[10%] spacey-5"
+          className=" text-center py-10  bg-white px-[10%] space-y-5"
           data-aos="fade-in"
           data-aos-duration="2000"
         >
@@ -307,8 +307,8 @@ const LandingPage = () => {
             Product Fabrication
           </p>
           <Carousel cols={5} rows={1} gap={20} autoplay={6000} loop>
-            {productImages.map((image) => (
-              <Carousel.Item key={image.id}>
+            {productImages.map((image,index) => (
+              <Carousel.Item key={index}>
                 <img
                   src={image}
                   alt={`product-${image.id}`}
@@ -322,8 +322,8 @@ const LandingPage = () => {
         <hr className="w-[80%] mx-auto" />
 
         {/* client new 2  */}
-        <div class="bg-white py-10 sm:py-32 lg:pb-20 lg:pt-10">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="bg-white py-10 sm:py-32 lg:pb-20 lg:pt-10">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <p
               className="text-lg font-normal uppercase mb-10 text-center text-gray-500 tracking-[4px]"
               data-aos="fade-in"
@@ -334,17 +334,17 @@ const LandingPage = () => {
             <div
               data-aos="fade-in"
               data-aos-duration="1500"
-              class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+              className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
             >
               <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src={patria}
                 alt="patria"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src={triatra}
                 alt="triatra"
                 width="158"
@@ -352,42 +352,42 @@ const LandingPage = () => {
               />
 
               <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src={ut}
                 alt="ut"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
                 src={pmp}
                 alt="pmp"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={pli}
                 alt="ppli"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 lg:col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                className="col-span-2 lg:col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={pml}
                 alt="Statamic"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 lg:col-start-3 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                className="col-span-2 lg:col-start-3 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={pmi}
                 alt="Statamic"
                 width="158"
                 height="48"
               />
               <img
-                class="col-span-2 lg:col-start-4 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                className="col-span-2 lg:col-start-4 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={sigma}
                 alt="Statamic"
                 width="158"
@@ -496,7 +496,7 @@ const LandingPage = () => {
 
               <div className="flex space-x-4 mt-4">
                 <Button className="">
-                  <a href={pdf} target="_blank">
+                  <a href={pdf} rel="noreferrer" target="_blank"> 
                     Baca Selengkapnya
                   </a>
                 </Button>
@@ -514,8 +514,8 @@ const LandingPage = () => {
               data-aos="fade-in"
               data-aos-duration="1500"
               className="text-center mx-auto"
-              src="https://www.ykbut.co.id/static/media/logowbs.df574081f1967211f6be.png"
-              alt="hoe"
+              src={wistle}
+              alt="wistle"
             />
           </div>
         </div>
@@ -530,6 +530,7 @@ const LandingPage = () => {
               data-aos="fade-in"
               data-aos-duration="1000"
               title="maps"
+              rel="preconnect"
               className="w-full h-[260px] lg:h-[300px] xl:pl-[20%]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8771927274815!2d107.13395415063958!3d-6.279871795141472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698530079bb95d%3A0x6e3bd034965ef020!2sPt%20Dian%20Pandu%20Pratama!5e0!3m2!1sid!2sid!4v1696404349311!5m2!1sid!2sid"
             />

@@ -17,14 +17,12 @@ import ProgramCSR from "./pages/ProgramCSR/ProgramCSR";
 import AddNews from "./pages/Admin/AddNews";
 import NewsAdmin from "./pages/Admin/NewsAdmin";
 import EditNews from "./pages/Admin/EditNews";
-import Esg from "./pages/ESG/Esg";
-// import NavbarCoy from "./components/Elements/Nav/NavbarCoy";
+import Esg from "./pages/ESG/Esg";  
 
 function App() {
   return (
     <>
       <Router>
-        {/* <NavbarCoy/> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />

@@ -29,7 +29,7 @@ import pmp from "./Brand/pmp.png";
 import sigma from "./Brand/sigma.png";
 import triatra from "./Brand/triatra.png";
 
-// PRODUCT 
+// PRODUCT
 import attachment from "./Product/Attachimage.jpg";
 import bulktank from "./Product/bulktank.png";
 import fueltruck from "./Product/fuel-truck.png";
@@ -59,42 +59,50 @@ import background13 from "./BackgroundOverlay/background13.JPG";
 import background15 from "./BackgroundOverlay/background15.JPG";
 import background16 from "./BackgroundOverlay/background16.jpeg";
 import background17 from "./BackgroundOverlay/background18.JPG";
-import backgroundnews from "./BackgroundOverlay/backgroundnews.jpg";
+import backgroundnews from "./BackgroundOverlay/bgnews.JPG";
 import esg from "./BackgroundOverlay/esg.JPG";
 import contact from "./BackgroundOverlay/contact.JPG";
 
 // ABOUT
 import about from "./About/about.JPG";
 import companystructure from "./About/structure.jpg";
-import milestone from "./About/milestone.jpg"
-import jamkerja from "./About/jamkerja.jpg"
+import milestone from "./About/milestone.jpg";
+import jamkerja from "./About/jamkerja.jpg";
 
 //BOD
-import ari from "./About/presdir/Ari Sasongko.jpeg"
-import amalik from "./About/presdir/Amalik.jpeg"
-import leo from "./About/presdir/Leomahesa.jpeg"
-import haryono from "./About/presdir/YFX Haryono.jpeg"
+import ari from "./About/presdir/Ari Sasongko.jpeg";
+import amalik from "./About/presdir/Amalik.jpeg";
+import leo from "./About/presdir/Leomahesa.jpeg";
+import haryono from "./About/presdir/YFX Haryono.jpeg";
 
 //LANDING
 import bghome from "./LandingPage/homedpp2.png";
 import landing1 from "./LandingPage/landang10.png";
 import logodpp from "./logodpp.png";
-import visimisi from "./LandingPage/visi1.JPG";
-import weldercertification from "./LandingPage/weldercertification.JPG";
-import fabrication from "./LandingPage/fabrication.JPG";
+import manufacturing from "./LandingPage/manufacturing.webp";
+import weldercertification from "./LandingPage/weldercertification.webp";
+import fabrication from "./LandingPage/fabrication.webp";
 import imgrounded from "./LandingPage/ronded.png";
+import wistle from "./LandingPage/whistle.png";
 
-// CSR 
+// CSR
 
-import edu from "./ProgramCSR/edu.png"
-import care from "./ProgramCSR/care.png"
-import green from "./ProgramCSR/green.png"
-import health from "./ProgramCSR/health.png"
+import edu from "./ProgramCSR/edu.png";
+import care from "./ProgramCSR/care.png";
+import green from "./ProgramCSR/green.png";
+import health from "./ProgramCSR/health.png";
 
 export {
-  edu,care,green,health,
+  wistle,
+  edu,
+  care,
+  green,
+  health,
   backgroundnews,
-  ari,amalik,leo,haryono,
+  ari,
+  amalik,
+  leo,
+  haryono,
   companystructure,
   milestone,
   esg,
@@ -135,7 +143,7 @@ export {
   imgrounded,
   fabrication,
   weldercertification,
-  visimisi,
+  manufacturing,
   background2,
   background3,
   background7,

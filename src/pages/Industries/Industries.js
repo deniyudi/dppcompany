@@ -180,7 +180,7 @@ const Industries = () => {
         <h2
           data-aos="fade-in"
           data-aos-duration="2500"
-          class="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+          className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
         >
           Our Location
         </h2>
@@ -194,19 +194,19 @@ const Industries = () => {
       </div>
 
       <hr className="mt-10 mb-10" />
-      <section class="bg-white dark:bg-gray-900 overflow-hidden">
-        <div class="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
+      <section className="bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
           <h2
             data-aos="fade-in"
             data-aos-duration="2500"
-            class="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+            className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
           >
             Our Clients
           </h2>
           <div
             data-aos="fade-up"
             data-aos-duration="1500"
-            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 dark:text-gray-400 text-center"
+            className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 dark:text-gray-400 text-center"
           >
             <img
               className="flex justify-center items-center"

@@ -45,12 +45,12 @@ const AddNews = () => {
 
   return (
     <>
-      <div class="mx-auto w-full max-w-[550px] mt-44">
+      <div className="mx-auto w-full max-w-[550px] mt-44">
         <form onSubmit={saveBerita}>
-          <div class="mb-5">
+          <div className="mb-5">
             <label
               for="judul"
-              class="mb-3 block text-base font-medium text-[#07074D] normal-case"
+              className="mb-3 block text-base font-medium text-[#07074D] normal-case"
             >
               Judul
             </label>
@@ -59,15 +59,15 @@ const AddNews = () => {
               name="judul"
               id="judul"
               placeholder="Masukkan Judul"
-              class="w-full rounded-md border normal-case border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full rounded-md border normal-case border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
-          <div class="mb-5">
+          <div className="mb-5">
             <label
               for="deskripsi"
-              class="mb-3 block text-base font-medium text-[#07074D] "
+              className="mb-3 block text-base font-medium text-[#07074D] "
             >
               Deskripsi
             </label>
@@ -76,7 +76,7 @@ const AddNews = () => {
               name="deskripsi"
               id="deskripsi"
               placeholder="Masukkan Deskripsi"
-              class="w-full resize-none normal-case rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full resize-none normal-case rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
@@ -86,14 +86,14 @@ const AddNews = () => {
           <div className="mb-5">
             <label
               for="Upload"
-              class="mb-3 block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-[#07074D]"
             >
               Type News & CSR
             </label>
             <select
               id="countries"
               onChange={(e) => setCategory(e.target.value.toLowerCase())}
-              class="block w-full text-sm mb-10 text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+              className="block w-full text-sm mb-10 text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
             >
               <option disabled selected>Pilihan</option>
               <option value="news">News</option>
@@ -101,15 +101,15 @@ const AddNews = () => {
               
             </select>
           </div>
-          <div class="mb-5">
+          <div className="mb-5">
             <label
               for="deskripsi"
-              class="mb-3 block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-[#07074D]"
             >
               Upload File
             </label>
             <input
-              class="block w-full text-sm mb-10 text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+              className="block w-full text-sm mb-10 text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
               id="file_input"
               type="file"
               onChange={loadImage}
@@ -125,7 +125,7 @@ const AddNews = () => {
           <div>
             <button
               type="submit"
-              class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+              className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
             >
               Submit
             </button>

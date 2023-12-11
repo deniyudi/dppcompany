@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
 import { Accordion } from "flowbite-react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background13, contact } from "../../assets";
+import {  contact } from "../../assets";
 import { useForm, ValidationError } from "@formspree/react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Contact = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const [email, setEmail] = useForm("mvojnago");
 
   const navigate = useNavigate();
-
 
   if (email.succeeded) {
     return <p>Pesan anda sudah terkirim</p>;
@@ -50,58 +48,58 @@ export const Contact = () => {
           </div>
         </div>
         <form className="px-5 py-2" onSubmit={setEmail} method="POST">
-          <label class="block">
-            <span class="block text-base font-semibold text-slate-700">
+          <label className="block">
+            <span className="block text-base font-semibold text-slate-700">
               Nama
             </span>
             <input
               type="text"
               name="name"
               id="name"
-              class="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
+              className="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
               required
             />
-            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
+            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
           </label>
 
           <ValidationError prefix="Name" field="name" errors={email.errors} />
-          <label class="block">
-            <span class="block text-base font-semibold text-slate-700">
+          <label className="block">
+            <span className="block text-base font-semibold text-slate-700">
               Email
             </span>
             <input
               name="email"
               id="email"
               type="email"
-              class="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
+              className="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
               required
             />
-            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
+            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
           </label>
           <ValidationError prefix="Email" field="email" errors={email.errors} />
-          <label class="block">
-            <span class="block text-base font-semibold text-slate-700">
+          <label className="block">
+            <span className="block text-base font-semibold text-slate-700">
               Judul
             </span>
             <input
               id="judul"
               name="judul"
               type="text"
-              class="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
+              className="border px-2 border-slate-400 rounded-sm overflow-hidden w-full h-10"
             />
-            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
+            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
           </label>
-          <label class="block">
-            <span class="block text-base font-semibold text-slate-700">
+          <label className="block">
+            <span className="block text-base font-semibold text-slate-700">
               Pesan
             </span>
             <textarea
               id="message"
               name="message"
               rows="7"
-              class="w-full p-2 border  border-slate-400 rounded"
+              className="w-full p-2 border  border-slate-400 rounded"
             ></textarea>
-            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
+            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"></p>
           </label>
           <ValidationError
             prefix="Message"
@@ -112,7 +110,7 @@ export const Contact = () => {
             type="submit"
             disabled={email.submitting}
             onClick={() => navigate("/contact")}
-            class=" bg-sky-700 text-white border border-slate-400 hover:text-white hover:bg-sky-600 p-2 "
+            className=" bg-sky-700 text-white border border-slate-400 hover:text-white hover:bg-sky-600 p-2 "
           >
             Send Message{" "}
           </button>
@@ -133,17 +131,17 @@ export const Contact = () => {
           </p>
         </div>
         <div
-          class="text-gray-500 mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:px-28 xl:mt-5 gap-x-4"
+          className="text-gray-500 mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:px-28 xl:mt-5 gap-x-4"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <div class="py-4 px-4 text-center space-y-2 text-lg">
+          <div className="py-4 px-4 text-center space-y-2 text-lg">
             <p className="uppercase font-bold text-lg">Hafidz Fahreza P</p>
             <p>hafidz.fp@dpp.co.id</p>
             <p>082137665891</p>
             <p>Business Development & Sales Supervisor</p>
           </div>
-          <div class="py-4 px-4 text-center space-y-2 text-lg ">
+          <div className="py-4 px-4 text-center space-y-2 text-lg ">
             <p className="uppercase font-bold text-lg">
               Mochamad Fadli Manggurangi
             </p>
@@ -238,9 +236,11 @@ export const Contact = () => {
         </div>
       </div>
 
-      <iframe 
+      <iframe
+        title="map dpp"
         data-aos="fade-in"
         data-aos-duration="1000"
+        rel="preconnect"
         className="w-full h-[40vh] sm:h-[28vh] md:h-[32vh] lg:h-[60vh] mt-14"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8771927274815!2d107.13395415063958!3d-6.279871795141472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698530079bb95d%3A0x6e3bd034965ef020!2sPt%20Dian%20Pandu%20Pratama!5e0!3m2!1sid!2sid!4v1696404349311!5m2!1sid!2sid"
       />

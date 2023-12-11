@@ -92,20 +92,20 @@ const ProgramCSR = () => {
         data-aos-duration="1500"
       >
         {csr.slice(3).map((csr) => (
-          <div class="mb-32 mx-auto relative flex max-w-[24rem] md:mx-3 lg:mx-2 flex-col bg-white bg-clip-border text-gray-700 shadow-md">
-            <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border aspect-square  bg-gradient-to-r from-[#f6f5f5a4] to-[#e9e9e9]  text-gray-700 shadow-none flex items-center justify-center">
+          <div className="mb-32 mx-auto relative flex max-w-[24rem] md:mx-3 lg:mx-2 flex-col bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border aspect-square  bg-gradient-to-r from-[#f6f5f5a4] to-[#e9e9e9]  text-gray-700 shadow-none flex items-center justify-center">
               <img
                 src={csr.url}
                 alt="kiw"
-                class=""
+                className=""
                 onClick={() => navigate(`/detail/${csr.id}`)}
               />
-              <div class="absolute top-3 right-4 w-32 px-3 py-1  bg-white rounded-full">
-                <img src={logodpp} alt="logo" class="" />
+              <div className="absolute top-3 right-4 w-32 px-3 py-1  bg-white rounded-full">
+                <img src={logodpp} alt="logo" className="" />
               </div>
             </div>
-            <div class="p-6 text-center min-h-[15rem] relative">
-              <h4 class="text-base font-medium leading-snug tracking-normal text-[#333333]">
+            <div className="p-6 text-center min-h-[15rem] relative">
+              <h4 className="text-base font-medium leading-snug tracking-normal text-[#333333]">
                 {new Intl.DateTimeFormat("en-US", {
                   day: "numeric",
                   month: "short",
@@ -113,15 +113,15 @@ const ProgramCSR = () => {
                 }).format(new Date(csr.createdAt))}
               </h4>
               <p
-                class="mt-3 mb-6 text-xl font-semibold leading-relaxed text-[#333333] cursor-pointer line-clamp-3"
+                className="mt-3 mb-6 text-xl font-semibold leading-relaxed text-[#333333] cursor-pointer line-clamp-3"
                 onClick={() => navigate(`/detail/${csr.id}`)}
               >
                 {csr.judul}
               </p>
 
-              <div class="absolute left-0 right-0 -bottom-8 flex items-center justify-center">
+              <div className="absolute left-0 right-0 -bottom-8 flex items-center justify-center">
                 <button
-                  class="rounded-full bg-[#ff000e] p-5 "
+                  className="rounded-full bg-[#ff000e] p-5 "
                   onClick={() => navigate(`/detail/${csr.id}`)}
                 >
                   <FaAngleRight className="text-white text-2xl font-extrabold" />
@@ -139,7 +139,7 @@ const ProgramCSR = () => {
       <BackgroundOverlay gambar={background12} content={data} />
 
       <div className="overflow-x-hidden">
-        <h2 class="mb-8 lg:mb-10 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+        <h2 className="mb-8 lg:mb-10 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
           Misi Kami
         </h2>
         <div className=" mx-auto text-center px-5 lg:w-[80%] lg:mb-10 lg:px-0">

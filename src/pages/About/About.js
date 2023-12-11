@@ -17,7 +17,7 @@ const About = () => {
         <div className="text-center py-10">
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="xl:grid grid lg:grid-cols-2 xl:grid-cols-2 justify-items-center lg:px-[10%]">
-            <div class="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
+            <div className="py-6 px-5 lg:px-0 lg:pr-6 flex items-center justify-center">
               <img
                 className="lg:rounded--[50px] rounded-lg aspect-video"
                 src={about}
@@ -72,14 +72,14 @@ const About = () => {
           {/* <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
             Satisfaction - Morale - Adaptability - Responsibility - Teamwork
           </p> */}
-          <div class="bg-white sm:py-0 lg:pb-20 lg:pt-0">
+          <div className="bg-white sm:py-0 lg:pb-20 lg:pt-0">
             <div
-              class="mx-auto max-w-7xl px-6 lg:px-8"
+              className="mx-auto max-w-7xl px-6 lg:px-8"
               data-aos="fade-in"
               data-aos-duration="2000"
             >
-              <div class="mx-auto space-y-3 mt-10 grid max-w-lg items-center gap-x-8 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <div class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
+              <div className="mx-auto space-y-3 mt-10 grid max-w-lg items-center gap-x-8 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
                   <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
                     Satisfaction
                   </p>
@@ -88,7 +88,7 @@ const About = () => {
                     Memberikan kepuasan penuh kepada pelanggan
                   </p>
                 </div>
-                <div class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
+                <div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
                   <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
                     Morale
                   </p>
@@ -97,7 +97,7 @@ const About = () => {
                     Memiliki semangat juang yang tinggi dan berintegritas
                   </p>
                 </div>
-                <div class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
+                <div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
                   <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
                     Adaptability
                   </p>
@@ -106,7 +106,7 @@ const About = () => {
                     Memahami keinginan pelanggan yang bersifat fleksibel
                   </p>
                 </div>
-                <div class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
+                <div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
                   <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
                     Responsibility
                   </p>
@@ -115,7 +115,7 @@ const About = () => {
                     Bekerja dengan penuh tanggung jawab
                   </p>
                 </div>
-                <div class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
+                <div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 space-y-2">
                   <p className="font-medium text-center text-lg mt-1 uppercase text-gray-700 tracking-[2px]">
                     Team Work
                   </p>
@@ -173,7 +173,7 @@ const About = () => {
                 regulasi rooster dan jam kerja yang ada di sana.
               </p>
             </div>
-            <div class="py-6 px-5 lg:px-0 pr-10 lg:pr-6 flex ">
+            <div className="py-6 px-5 lg:px-0 pr-10 lg:pr-6 flex ">
               <img
               data-aos="fade-left" data-aos-duration="2000"
                 className="rounded-lg aspect-video"
