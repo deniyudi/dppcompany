@@ -48,7 +48,6 @@ import xprovessel from "./Product/xprovessel.png";
 import xprovesselbig from "./Product/xpro-vesselbig.png";
 
 // BACKGROUND OVERLAY
-import productbg from "./BackgroundOverlay/bgproduct.JPG";
 import background2 from "./BackgroundOverlay/background2.JPG";
 import background3 from "./BackgroundOverlay/background3.JPG";
 import background7 from "./BackgroundOverlay/background7.JPG";
@@ -60,6 +59,7 @@ import background13 from "./BackgroundOverlay/background13.JPG";
 import background15 from "./BackgroundOverlay/background15.JPG";
 import background16 from "./BackgroundOverlay/background16.jpeg";
 import background17 from "./BackgroundOverlay/background18.JPG";
+import backgroundnews from "./BackgroundOverlay/backgroundnews.jpg";
 import esg from "./BackgroundOverlay/esg.JPG";
 import contact from "./BackgroundOverlay/contact.JPG";
 
@@ -67,15 +67,13 @@ import contact from "./BackgroundOverlay/contact.JPG";
 import about from "./About/about.JPG";
 import companystructure from "./About/structure.jpg";
 import milestone from "./About/milestone.jpg"
+import jamkerja from "./About/jamkerja.jpg"
 
 //BOD
 import ari from "./About/presdir/Ari Sasongko.jpeg"
 import amalik from "./About/presdir/Amalik.jpeg"
 import leo from "./About/presdir/Leomahesa.jpeg"
 import haryono from "./About/presdir/YFX Haryono.jpeg"
-
-//CSR
-import dppgreen from "./ProgramCSR/green.JPG";
 
 //LANDING
 import bghome from "./LandingPage/homedpp2.png";
@@ -86,13 +84,22 @@ import weldercertification from "./LandingPage/weldercertification.JPG";
 import fabrication from "./LandingPage/fabrication.JPG";
 import imgrounded from "./LandingPage/ronded.png";
 
+// CSR 
+
+import edu from "./ProgramCSR/edu.png"
+import care from "./ProgramCSR/care.png"
+import green from "./ProgramCSR/green.png"
+import health from "./ProgramCSR/health.png"
 
 export {
+  edu,care,green,health,
+  backgroundnews,
   ari,amalik,leo,haryono,
   companystructure,
   milestone,
   esg,
   contact,
+  jamkerja,
   landing1,
   fabrication1,
   fabrication2,
@@ -100,7 +107,6 @@ export {
   fabrication4,
   logodpp,
   bghome,
-  dppgreen,
   background17,
   background16,
   background15,
@@ -110,7 +116,6 @@ export {
   background9,
   background8,
   about,
-  productbg,
   attachment,
   bulktank,
   fueltruck,

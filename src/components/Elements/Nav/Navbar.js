@@ -32,6 +32,7 @@ export const Navbar = () => {
             <img src={logodpp} class="h-16 lg:h-12 xl:h-16" alt=" Logo" />
           </a>
           <button
+            aria-label="hamburger"
             type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden"
             onClick={() => setOpen(!open)}

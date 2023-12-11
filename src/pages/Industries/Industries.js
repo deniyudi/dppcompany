@@ -96,12 +96,6 @@ const Industries = () => {
         data-aos-duration="1500"
       >
         <div className="p-3  w-full h-full  mx-auto">
-          {/* <Carousel indicators={false} leftControl=" " rightControl=" ">
-            <img alt="12312" src={manufacturing1} />
-            <img alt="12312" src={manufacturing2} />
-            <img alt="12312" src={manufacturing3} />
-          <img alt="12312" src={manufacturing4} />
-          </Carousel> */}
           <Slider {...settings}>
             <img alt="12312" src={fabrication1} />
             <img alt="12312" src={fabrication2} />
@@ -110,7 +104,7 @@ const Industries = () => {
           </Slider>
 
           <div className="text-center w-full">
-            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px] ">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 md:h-[76px] ">
               Manufacturing Process
             </p>
             <p className="mb-4 xl:text-justify lg:text-sm xl:text-base">
@@ -129,7 +123,7 @@ const Industries = () => {
             <img alt="12312" src={manpower4} />
           </Slider>
           <div className="text-center w-full">
-            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 md:h-[76px]">
               Manpower Support on Site
             </p>
             <p className="mb-4 xl:text-justify  lg:text-sm xl:text-base">
@@ -148,14 +142,8 @@ const Industries = () => {
             <img alt="12312" src={weldertest4} />
             <img alt="12312" src={weldertest3} />
           </Slider>
-          {/* <Carousel indicators={false} leftControl=" " rightControl=" ">
-            <img alt="12312" src={weldertest5} />
-            <img alt="12312" src={weldertest1} />
-            <img alt="12312" src={weldertest4} />
-            <img alt="12312" src={weldertest3} />
-          </Carousel> */}
           <div className="text-center w-full">
-            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 md:h-[76px]">
               Welder Certification
             </p>
             <p className="mb-4 xl:text-justify  lg:text-sm xl:text-base">
@@ -174,14 +162,8 @@ const Industries = () => {
             <img alt="12312" src={manufacturing3} />
             <img alt="12312" src={manufacturing4} />
           </Slider>
-          {/* <Carousel indicators={false} leftControl=" " rightControl=" ">
-            <img alt="12312" src={manufacturing1} />
-            <img alt="12312" src={manufacturing2} />
-            <img alt="12312" src={manufacturing3} />
-            <img alt="12312" src={manufacturing4} />
-          </Carousel> */}
           <div className="text-center w-full">
-            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 h-[76px]">
+            <p className="uppercase font-semibold lg:text-lg xl:text-2xl my-4 md:h-[76px]">
               Mass - Production Project
             </p>
             <p className="mb-4 xl:text-justify lg:text-sm xl:text-base">
@@ -194,7 +176,7 @@ const Industries = () => {
       </div>
 
       <hr className="mt-10 mb-10" />
-      <div className="text-center w-full h-full lg:mt-2 overflow-x-hidden">
+      <div className="text-center w-full h-full lg:mt-2 overflow-hidden">
         <h2
           data-aos="fade-in"
           data-aos-duration="2500"
@@ -212,7 +194,7 @@ const Industries = () => {
       </div>
 
       <hr className="mt-10 mb-10" />
-      <section class="bg-white dark:bg-gray-900 overflow-x-hidden">
+      <section class="bg-white dark:bg-gray-900 overflow-hidden">
         <div class="py-8 lg:py-10 mx-auto max-w-screen-xl px-4">
           <h2
             data-aos="fade-in"
@@ -271,88 +253,7 @@ const Industries = () => {
         </div>
       </section>
 
-      {/* <div className="">
-        {_rendersindustries()}
-
-        <div className="px-3 align-top md:grid md:grid-cols-2 md:-mt-20 md:p-4 lg:px-20 lg:flex lg:flex-row lg:justify-center ">
-          <div className="p-3 w-full h-full aspect-square md:p-10 lg:w-[40%] xl:w-[30%]">
-            <Carousel>
-              <img
-                alt="12312"
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Tambang-3-1-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Tambang-5-1-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Perhutanan-3-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Industri-2-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Industri-3-768x768.jpg"
-              />
-            </Carousel>
-          </div>
-          <div className="px-4 md:p-4 lg:w-[60%]">
-            <p className="uppercase font-semibold text-2xl my-4 ">Pertambangan</p>
-            <p className="mb-4 ">
-              Uniquip merupakan salah satu penyedia alat berat pertambangan yang
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-              dukungan teknis dan sparepart yang diperlukan untuk menjaga
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-            </p>
-          </div>
-        </div>
-        <div className="px-3 align-top md:grid md:grid-cols-2 md:-mt-20 md:p-4 lg:px-20 lg:flex lg:flex-row lg:justify-center ">
-          <div className="p-3 w-full h-full aspect-square md:p-10 lg:w-[40%] xl:w-[30%]">
-            <Carousel>
-              <img
-                alt="12312"
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Tambang-3-1-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Tambang-5-1-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Perhutanan-3-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Industri-2-768x768.jpg"
-              />
-              <img
-                alt="..."
-                src="https://www.uniquip.co.id/wp-content/uploads/2023/02/Industri-3-768x768.jpg"
-              />
-            </Carousel>
-          </div>
-          <div className="px-4 md:p-4 lg:w-[60%]">
-            <p className="uppercase font-semibold text-2xl my-4 ">Pertambangan</p>
-            <p className="mb-4 ">
-              Uniquip merupakan salah satu penyedia alat berat pertambangan yang
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-              dukungan teknis dan sparepart yang diperlukan untuk menjaga
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-              memiliki komitmen untuk memberikan solusi terbaik bagi industri
-              pertambangan di Indonesia. Uniquip telah terbukti mampu memberikan
-            </p>
-          </div>
-        </div>
-      </div> */}
+   
     </>
   );
 };

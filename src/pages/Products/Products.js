@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background15 } from "../../assets";
+import { background15, patria, ut } from "../../assets";
 
 import {
   attachment,
@@ -97,48 +97,7 @@ export const Products = () => {
               ))}
             </div>
 
-            {/* <div className="mx-auto grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 dark:text-gray-400 text-center">
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Dump-Vessel-20.png"
-                alt="ut"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Concrete-Mixer.png"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Fab-SST.jpg"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Fab-Components-HD.jpg"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Assy-Body-SST.jpg"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/ASsy-Fab-SDT-110.jpg"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/01/Dolly-50.jpg"
-                alt="patria"
-              />
-              <img
-                className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/Fab-Assy-SLT-45.jpg"
-                alt="patria"
-              />
-            </div> */}
+           
           </div>
         </section>
         <hr className="mt-10 mb-6" />
@@ -159,12 +118,12 @@ export const Products = () => {
             >
               <img
                 className="flex justify-center items-center mx-auto"
-                src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/1AFbQ0GKhNMlFwXGrpvOSjpWuW6v09eDoXZkjYqr.png"
+                src={ut}
                 alt="ut"
               />
               <img
                 className="flex justify-center items-center mx-auto"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/PATRIA.png"
+                src={patria}
                 alt="patria"
               />
             </div>

@@ -11,7 +11,7 @@ const MilestoneAward = () => {
   return (
     <>
    <BackgroundOverlay content={title} gambar={background3}/>
-    <div className='my-20 lg:px-20 overflow-x-hidden '>
+    <div className='md:my-20 px-2 lg:px-20 overflow-x-hidden'>
       <img src={milestone} alt='milestone'/>
     </div>
     {/* <div className='px-6 mb-24 -mt-8 xl:ml-80'>

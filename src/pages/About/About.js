@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { about, background8, companystructure,} from "../../assets";
+import { about, background8, companystructure, jamkerja,} from "../../assets";
 
 const About = () => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const About = () => {
   const title = "Tentang Kami";
   return (
     <>
-      <main className="h-full w-full bg-white ">
+      <main className="h-full w-full bg-white overflow-hidden">
         <BackgroundOverlay content={title} gambar={background8} />
 
         {/* <Herosection content={title}/> */}
@@ -30,7 +30,7 @@ const About = () => {
               <p className="text-base font-normal uppercase mb-4 md:text-center lg:text-left text-gray-500 tracking-[4px] ">
                 about us
               </p>
-              <p className="font-semibold text-3xl mt-1 mb-4 md:text-center lg:text-left  text-gray-700">
+              <p className="font-semibold text-2xl md:text-3xl mt-1 mb-4 md:text-center lg:text-left  text-gray-700">
                 PT Dian Pandu Pratama
               </p>
               {/* <p className="text-3xl font-semibold mb-4 md:text-center lg:text-left ">
@@ -143,7 +143,7 @@ const About = () => {
           <img
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="lg:w-[60%] mt-5 my-2 bg-white mx-auto"
+            className="lg:w-[60%] ml-3  mt-5 my-2 bg-white md:mx-auto"
             src={companystructure}
             alt="branch"
           />
@@ -177,7 +177,7 @@ const About = () => {
               <img
               data-aos="fade-left" data-aos-duration="2000"
                 className="rounded-lg aspect-video"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/04/IMG_6306-768x512.jpg"
+                src={jamkerja}
                 alt="hoe"
               />
             </div>

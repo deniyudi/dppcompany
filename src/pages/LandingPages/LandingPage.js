@@ -27,6 +27,14 @@ import {
   xprovesselbig,
   bghome,
   landing1,
+  patria,
+  triatra,
+  ut,
+  pmp,
+  pli,
+  pml,
+  pmi,
+  sigma,
 } from "../../assets";
 
 import pdf from "../../assets/File Pdf/Pedoman Whisle Blower YKBUT 2021.pdf";
@@ -40,7 +48,9 @@ const LandingPage = () => {
   }, []);
 
   const getNews = async () => {
-    const response = await axios.get("http://20.205.171.175:5000/upload?category=news");
+    const response = await axios.get(
+      "http://20.205.171.175:5000/upload?category=news"
+    );
     setNews(response.data.reverse());
   };
 
@@ -74,7 +84,7 @@ const LandingPage = () => {
             PT Dian Pandu Pratama
           </p>
           <hr className="border-black my-7" />
-          <p className="lg:w-[80%] xl:w-[60%] text-lg font-normal text-gray-700">
+          <p className="lg:w-[80%] xl:w-[60%] pr-2 text-lg font-normal text-gray-700">
             PT Dian Pandu Pratama adalah perusahaan yang berdiri sejak tahun
             2012 dan berfokus pada Product Support Manufacturing dan Manpower
             Skilled Support on Job Site. Kami memiliki Manpower yang telah
@@ -103,7 +113,7 @@ const LandingPage = () => {
               <p className="text-base font-normal uppercase mb-2 text-gray-500 tracking-[4px]">
                 Why us
               </p>
-              <p className="text-3xl font-semibold lg:w-[60%] mb-4">
+              <p className="text-3xl font-semibold lg:w-[60%] pr-2 md:pr-0 mb-4">
                 Dian Pandu Pratama as Job Supply and Labour Supply
               </p>
               <p className="text-justify mr-5 lg:w-[80%] mb-3">
@@ -328,14 +338,14 @@ const LandingPage = () => {
             >
               <img
                 class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/PATRIA.png"
+                src={patria}
                 alt="patria"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/1f1c9a8e7ba44a2adeef5970999a8b00.png"
+                src={triatra}
                 alt="triatra"
                 width="158"
                 height="48"
@@ -343,42 +353,42 @@ const LandingPage = () => {
 
               <img
                 class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/1AFbQ0GKhNMlFwXGrpvOSjpWuW6v09eDoXZkjYqr.png"
+                src={ut}
                 alt="ut"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/PMP-300x77.png"
+                src={pmp}
                 alt="pmp"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/PPLI-300x77.png"
+                src={pli}
                 alt="ppli"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 lg:col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/02/PML.png"
+                src={pml}
                 alt="Statamic"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 lg:col-start-3 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="https://www.dpp.co.id/wp-content/uploads/2022/03/cropped-Logo-pami-Terbaru-1-300x77.png"
+                src={pmi}
                 alt="Statamic"
                 width="158"
                 height="48"
               />
               <img
                 class="col-span-2 lg:col-start-4 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="http://202.159.35.85/cdn/d:300/company/logo/20211003/6e8d59e8f3cacefacc4374675fb24b4b0b75618b1633230458.jpg"
+                src={sigma}
                 alt="Statamic"
                 width="158"
                 height="48"
@@ -487,7 +497,7 @@ const LandingPage = () => {
               <div className="flex space-x-4 mt-4">
                 <Button className="">
                   <a href={pdf} target="_blank">
-                    Read More
+                    Baca Selengkapnya
                   </a>
                 </Button>
                 <Button color="failure" className="">

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Carousel } from "flowbite-react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background12, logodpp} from "../../assets";
+import { background12, care, edu, green, health, logodpp } from "../../assets";
 import { useNavigate } from "react-router-dom";
 
 // import { Button } from "flowbite-react";
@@ -157,30 +157,22 @@ const ProgramCSR = () => {
       </div>
 
       <div
-        className="grid grid-cols-2  lg:grid-cols-4 lg:w-[1000px] mx-auto"
+        className="grid grid-cols-2 my-16 lg:grid-cols-4 lg:w-[1000px] mx-auto"
         data-aos="fade-in"
         data-aos-duration="1500"
       >
-        <img
-          alt="csr"
-          src="https://www.dpp.co.id/wp-content/uploads/2022/04/3.png"
-          className="mx-auto w-96 lg:w-full"
-        />
-        <img
-          alt="csr"
-          src="https://www.dpp.co.id/wp-content/uploads/2022/04/4.png"
-          className="mx-auto w-96 lg:w-full"
-        />
-        <img
-          alt="csr"
-          src="https://www.dpp.co.id/wp-content/uploads/2022/04/1.png"
-          className="mx-auto w-96 lg:w-full"
-        />
-        <img
-          alt="csr"
-          src="https://www.dpp.co.id/wp-content/uploads/2022/04/2.png"
-          className="mx-auto w-96 lg:w-full"
-        />
+        <div className="bg-blue-500 w-full">
+          <img alt="csr" src={green} className="mx-auto w-96 lg:w-full" />
+        </div>
+        <div className="bg-blue-500 w-full">
+          <img alt="csr" src={edu} className="mx-auto w-96 lg:w-full" />
+        </div>
+        <div className="bg-blue-500 w-full">
+          <img alt="csr" src={health} className="mx-auto w-96 lg:w-full" />
+        </div>
+        <div className="bg-blue-500 w-full">
+          <img alt="csr" src={care} className="mx-auto w-96 lg:w-full" />
+        </div>
       </div>
 
       {_programCsr()}

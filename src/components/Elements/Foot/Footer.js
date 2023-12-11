@@ -14,7 +14,8 @@ export const Footer = () => {
               <a href="/landingpage" class="">
                 <img src={Logo} class="mr-3 mb-4 w-64 h-auto" alt="logo" />
                 <p className="text-justify sm:w-[70%] sm:ml-4 text-base text-gray-600 font-normal">
-                  PT Dian Pandu Pratama adalah perusahaan  bergerak dalam bidang Job & Labour Supply.
+                  PT Dian Pandu Pratama adalah perusahaan bergerak dalam bidang
+                  Job & Labour Supply.
                 </p>
                 <p className="text-justify mt-2 sm:w-[70%] sm:ml-4 text-base text-gray-600 font-semibold">
                   Jam Operational DPP :
@@ -85,12 +86,12 @@ export const Footer = () => {
                     <i className="fa fa-phone fa-lg mr-5 w-4"></i>
                     <p>(021) 893 5016</p>
                   </li>
-                  <li class="mb-4 flex items-center">
+                  {/* <li class="mb-4 flex items-center">
                     <i className="fa fa-envelope fa-lg mr-5 w-4"></i>
                     <p>
                       <a href="mailto:contact@dpp.co.id">contact@dpp.co.id</a>
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
 
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:mt-7 lg:mb-3" />
@@ -110,6 +111,7 @@ export const Footer = () => {
                     <a
                       href="mailto:contact@dpp.co.id"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                      aria-label="Email to contact@dpp.co.id"
                     >
                       <i class="fa fa-envelope "></i>
                     </a>
@@ -118,6 +120,7 @@ export const Footer = () => {
                     <a
                       href="https://www.youtube.com/@dppofficial3520"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                      aria-label="youtube dpp.co.id"
                     >
                       <i class="fa fa-youtube-play "></i>
                     </a>
@@ -126,6 +129,7 @@ export const Footer = () => {
                     <a
                       href="https://instagram.com/official.dpp?igshid=MzRlODBiNWFlZA=="
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                      aria-label="instagram dpp"
                     >
                       <i class="fa fa-instagram "></i>
                     </a>
@@ -134,14 +138,13 @@ export const Footer = () => {
                     <a
                       href="https://www.linkedin.com/company/pt-dian-pandu-pratama"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                      aria-label="linked in dpp"
                     >
                       <i class="fa fa-linkedin "></i>
                     </a>
                   </div>
                 </div>
               </div>
-
-              
             </div>
           </div>
 
