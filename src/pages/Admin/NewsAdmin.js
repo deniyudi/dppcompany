@@ -10,13 +10,13 @@ const NewsAdmin = () => {
   }, []);
 
   const getNews = async () => {
-    const response = await axios.get("http://20.205.171.175:5000/upload");
+    const response = await axios.get("http://dpp.co.id:5000/upload");
     setNews(response.data);
   };
 
   const deleteNews = async (newsId) => {
     try {
-      await axios.delete(`http://20.205.171.175:5000/upload/${newsId}`);
+      await axios.delete(`http://dpp.co.id:5000/upload/${newsId}`);
       getNews();
     } catch (error) {
       console.log(error);

@@ -23,7 +23,7 @@ const EditNews = () => {
     }
 
     const getDataById = async ()=>{
-        const response = await axios.get(`http://20.205.171.175:5000/upload/${id}`);
+        const response = await axios.get(`http://dpp.co.id:5000/upload/${id}`);
 
         setTitle(response.data.judul);
         setFile(response.data.img)
@@ -40,7 +40,7 @@ const EditNews = () => {
         formData.append("desc",desc);
         formData.append("category",category);
         try {
-            await axios.patch(`http://20.205.171.175:5000/upload/${id}`, formData,{
+            await axios.patch(`http://dpp.co.id:5000/upload/${id}`, formData,{
                 headers:{
                     "Content-Type":"multipart/form-data"
                 }

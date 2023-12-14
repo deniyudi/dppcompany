@@ -50,7 +50,7 @@ const LandingPage = () => {
 
   const getNews = async () => {
     const response = await axios.get(
-      "http://20.205.171.175:5000/upload?category=news"
+      "http://dpp.co.id:5000/upload?category=news"
     );
     setNews(response.data.reverse());
   };
@@ -98,7 +98,12 @@ const LandingPage = () => {
         {/* GAMBAR  */}
 
         <div className="relative overflow-hidden mt-10">
-          <img src={bghome} alt="imgbg"  loading="lazy" className="w-full h-full" />
+          <img
+            src={bghome}
+            alt="imgbg"
+            loading="lazy"
+            className="w-full h-full"
+          />
         </div>
 
         {/* ===== KET DPP & MP =====  */}
@@ -307,7 +312,7 @@ const LandingPage = () => {
             Product Fabrication
           </p>
           <Carousel cols={5} rows={1} gap={20} autoplay={6000} loop>
-            {productImages.map((image,index) => (
+            {productImages.map((image, index) => (
               <Carousel.Item key={index}>
                 <img
                   src={image}
@@ -496,7 +501,7 @@ const LandingPage = () => {
 
               <div className="flex space-x-4 mt-4">
                 <Button className="">
-                  <a href={pdf} rel="noreferrer" target="_blank"> 
+                  <a href={pdf} rel="noreferrer" target="_blank">
                     Baca Selengkapnya
                   </a>
                 </Button>
@@ -513,7 +518,7 @@ const LandingPage = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1500"
-              className="text-center mx-auto"
+              className="text-center mx-auto hidden lg:block"
               src={wistle}
               alt="wistle"
             />
@@ -523,7 +528,7 @@ const LandingPage = () => {
         <hr className="w-[80%] mx-auto" />
 
         {/* network  */}
-        <div className="text-center mt-9 bg-slate-50 py-10 border-b">
+        <div className="text-center mt-3 md:mt-9 bg-slate-50 py-10 border-b">
           {/* <p className="text-3xl font-bold mb-5">OUR NETWORK</p> */}
           <div className="lg:grid lg:grid-cols-2 justify-items-center space-x-4 lg:space-x-10">
             <iframe

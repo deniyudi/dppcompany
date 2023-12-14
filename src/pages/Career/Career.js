@@ -149,7 +149,7 @@ const Career = () => {
                 Cancel
               </Button>
               <Button
-                href="http://20.205.171.175:8069/jobs"
+                href="https://odoo.dpp.co.id/jobs"
                 target="_blank"
                 className="px-6"
               >

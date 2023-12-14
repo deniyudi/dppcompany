@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <>
       <nav className="fixed w-full top-0 z-40 font-primary bg-slate-50 ">
-        <div className="xl:pl-[10%] xl:pr-[3%]  justify-between lg:justify-evenly flex flex-wrap items-center xl:justify-between mx-auto p-4">
+        <div className="xl:pl-[10%] xl:pr-[3%]  justify-between lg:justify-evenly flex flex-wrap items-center xl:justify-between mx-auto py-2 px-3 md:p-4">
           <a href="/" className="flex items-center ">
             <img src={logodpp} className="h-16 lg:h-12 xl:h-16" alt=" Logo" />
           </a>

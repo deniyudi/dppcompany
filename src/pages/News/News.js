@@ -18,7 +18,7 @@ export const News = () => {
 
   const getNews = async () => {
     const response = await axios.get(
-      "http://20.205.171.175:5000/upload?category=news"
+      "http://dpp.co.id:5000/upload?category=news"
     );
     setNews(response.data.reverse());
   };
