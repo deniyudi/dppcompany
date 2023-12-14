@@ -23,7 +23,7 @@ const ProgramCSR = () => {
 
     const getCsr = async () => {
       const response = await axios.get(
-        "http://dpp.co.id:5000/upload?category=csr"
+        "https://dpp.co.id:5000/upload?category=csr"
       );
       setCsr(response.data.reverse());
     };
@@ -78,7 +78,7 @@ const ProgramCSR = () => {
 
     const getCsr = async () => {
       const response = await axios.get(
-        "http://dpp.co.id:5000/upload?category=csr"
+        "https://dpp.co.id:5000/upload?category=csr"
       );
       setCsr(response.data.reverse());
     };

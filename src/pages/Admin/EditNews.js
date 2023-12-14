@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const EditNews = () => {
     const [title,setTitle] = useState("")
@@ -9,8 +9,6 @@ const EditNews = () => {
     const [file,setFile] = useState("")
     const [preview,setPreview] = useState("")
     const {id} =useParams();
-
-    const navigate = useNavigate();
 
     useEffect(()=>{
         getDataById();
@@ -23,7 +21,7 @@ const EditNews = () => {
     }
 
     const getDataById = async ()=>{
-        const response = await axios.get(`http://dpp.co.id:5000/upload/${id}`);
+        const response = await axios.get(`https://dpp.co.id:5000/upload/${id}`);
 
         setTitle(response.data.judul);
         setFile(response.data.img)
@@ -40,7 +38,7 @@ const EditNews = () => {
         formData.append("desc",desc);
         formData.append("category",category);
         try {
-            await axios.patch(`http://dpp.co.id:5000/upload/${id}`, formData,{
+            await axios.patch(`https://dpp.co.id:5000/upload/${id}`, formData,{
                 headers:{
                     "Content-Type":"multipart/form-data"
                 }

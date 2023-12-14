@@ -11,7 +11,7 @@ export const DetailNews = () => {
     window.scrollTo(0, 0);
     const getNews = async () => {
       try {
-        const response = await axios.get(`http://dpp.co.id:5000/upload/${id}`);
+        const response = await axios.get(`https://dpp.co.id:5000/upload/${id}`);
         setNews(response.data);
       } catch (error) {
         console.error("Error fetching news details:", error);

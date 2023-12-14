@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { gambarAtas } from "../../data";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Button } from "flowbite-react";
@@ -13,18 +12,17 @@ export const News = () => {
 
   useEffect(() => {
     getNews();
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const getNews = async () => {
     const response = await axios.get(
-      "http://dpp.co.id:5000/upload?category=news"
+      "https://dpp.co.id:5000/upload?category=news"
     );
     setNews(response.data.reverse());
   };
 
   const navigate = useNavigate();
-
 
   const _renderNews = () => {
     return (

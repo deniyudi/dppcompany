@@ -50,7 +50,7 @@ const LandingPage = () => {
 
   const getNews = async () => {
     const response = await axios.get(
-      "http://dpp.co.id:5000/upload?category=news"
+      "https://dpp.co.id:5000/upload?category=news"
     );
     setNews(response.data.reverse());
   };

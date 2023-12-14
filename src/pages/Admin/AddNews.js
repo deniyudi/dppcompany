@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const AddNews = () => {
   const [title, setTitle] = useState("");
@@ -8,13 +7,6 @@ const AddNews = () => {
   const [category, setCategory] = useState("");
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
-  // const [description, setDescription] = useState('');
-
-  const handleDescriptionChange = (event) => {
-    setDesc(event.target.value);
-  };
-
-  const navigate = useNavigate();
 
   const loadImage = (e) => {
     const image = e.target.files[0];
@@ -30,7 +22,7 @@ const AddNews = () => {
     formData.append("desc", desc);
     formData.append("category", category);
     try {
-      await axios.post("http://dpp.co.id:5000/upload", formData, {
+      await axios.post("https://dpp.co.id:5000/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

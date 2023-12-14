@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import BackgroundOverlay from "../../components/Fragments/BackgroundOverlay";
-import { background9, esg } from "../../assets";
+import {  esg } from "../../assets";
 
 const Esg = () => {
   useEffect(() => {
